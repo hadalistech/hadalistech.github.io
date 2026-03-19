@@ -1,48 +1,111 @@
 # 🌊 HadalisTech
 
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink?logo=github)](https://github.com/sponsors/hadalistech)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-donate-yellow?logo=buymeacoffee)](https://buymeacoffee.com/hadalistecg)
+[GitHub Sponsors](https://github.com/sponsors/hadalistech) • 
+[Buy Me a Coffee](https://www.buymeacoffee.com/hadalistecg)
 
 ---
 
-## ⚓ Herramientas .NET de aguas profundas, listas para producción
-En **HadalisTech** diseñamos librerías **Open Source** y soluciones **Pro** que simplifican tu stack .NET.  
+## ⚓ Tecnología de aguas profundas, lista para producción
+
+En **HadalisTech** construimos un ecosistema enfocado en acelerar el desarrollo .NET a través de:
+
+- 🦑 Consultoría y desarrollo a medida  
+- 🐋 Librerías Open Source  
+- 🐉 Herramientas premium y SaaS  
+- 🌌 Contenido técnico y comunidad  
+
 Menos código repetitivo, menos errores y más velocidad para llegar a producción con confianza.
 
 ---
 
-## 🐋 TinyBlueWhale (Open Source)
-Colección de librerías **open source bajo MIT** para proyectos .NET.  
-Simples, confiables y diseñadas para reemplazar dependencias pesadas con soluciones claras y ligeras.  
+## 🧩 Ecosistema HadalisTech
 
+### 🦑 Kraken — Consultoría & Delivery
+Nuestra línea de servicios orientada a negocio.
 
----
+- Arquitectura backend .NET  
+- Desarrollo a medida (web, apps, APIs)  
+- Optimización y refactor de sistemas  
+- Soporte técnico y evolución de productos  
 
-## 🐉 Leviathan (Próximamente)
-Nuestra suite **premium para .NET**, enfocada en proyectos críticos y entornos empresariales.  
-
-Leviathan traerá:  
-- 🚀 **Source Generators** para máxima performance.  
-- ✅ **Validación en startup** para seguridad en producción.  
-- 🛠️ **Soporte profesional** para entornos críticos.  
-
-⚠️ Actualmente en desarrollo — pronto disponible para equipos y empresas que buscan más potencia que las librerías OSS tradicionales.
+> Aquí es donde resolvemos problemas reales.
 
 ---
 
-## 💙 Haz crecer a la ballenita
-Cada donación nos ayuda a mantener vivo el Open Source y seguir explorando las profundidades.  
-Con tu apoyo, **TinyBlueWhale seguirá nadando y nuevas criaturas emergerán**.
+### 🐋 TinyBlueWhale — Open Source
 
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink?logo=github)](https://github.com/sponsors/hadalistech)  
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-donate-yellow?logo=buymeacoffee)](https://buymeacoffee.com/hadalistecg)  
+Colección de librerías **open source bajo MIT** diseñadas para:
+
+- reemplazar dependencias pesadas  
+- simplificar patrones comunes  
+- acelerar desarrollo backend  
+
+#### Librerías actuales:
+
+- `TinyBlueWhale.Mediator`  
+- `TinyBlueWhale.Mediator.CQRS`  
+
+> Enfocadas en simplicidad, claridad y uso real en producción.
+
+---
+
+### 🐉 Leviathan — Premium / SaaS (Próximamente)
+
+Suite avanzada para equipos que necesitan más control, performance y soporte.
+
+Incluye:
+
+- 🚀 Source Generators para automatización y performance  
+- ✅ Validación en startup para evitar errores en producción  
+- 🛠️ Tooling avanzado para backend .NET  
+- 💼 Soporte profesional para entornos críticos  
+
+> Diseñado para escalar más allá del open source.
+
+---
+
+### 🌌 Abyss Lab — Contenido & Comunidad
+
+Espacio donde compartimos:
+
+- aprendizajes reales de proyectos  
+- patrones de arquitectura  
+- demos y experimentos  
+- herramientas reutilizables  
+
+> Construimos en público lo que usamos en producción.
+
+---
+
+## 🚀 Filosofía
+
+No construimos librerías por hobby.
+
+Construimos:
+
+- herramientas basadas en problemas reales  
+- soluciones reutilizables  
+- componentes que evolucionan a productos  
+
+Cada proyecto alimenta el siguiente.
+
+---
+
+## 💙 Apoya el proyecto
+
+Si te sirven nuestras herramientas o contenido, puedes apoyar el crecimiento del ecosistema:
+
+- 👉 [GitHub Sponsors](https://github.com/sponsors/hadalistech)  
+- 👉 [Buy Me a Coffee](https://www.buymeacoffee.com/hadalistecg)  
 
 ---
 
 ## 📧 Contacto
-¿Tienes una idea o quieres colaborar? Escríbenos:  
+
+¿Tienes un proyecto, idea o necesitas apoyo técnico?
+
 📩 **hadalistech@gmail.com**
 
 ---
 
-© 2025 HadalisTech. Todos los derechos reservados.
+© 2026 HadalisTech — Ecosistema de consultoría, open source y productos .NET
