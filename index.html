@@ -1,98 +1,318 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HadalisTech 🌊</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-white font-sans">
+<body class="bg-slate-950 text-white font-sans">
   <!-- Header -->
-  <header class="bg-slate-800 shadow-md">
-    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-      <h1 class="text-2xl font-bold text-cyan-400">HadalisTech 🌊</h1>
-      <nav class="space-x-6">
-        <a href="#productos" class="hover:text-cyan-300">Productos</a>
-        <a href="#donaciones" class="hover:text-cyan-300">Donaciones</a>
+  <header class="bg-slate-900/95 border-b border-slate-800 sticky top-0 z-50 backdrop-blur">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div>
+        <h1 class="text-2xl font-bold text-cyan-400">HadalisTech 🌊</h1>
+        <p class="text-xs text-slate-400">Arquitectura, consultoría, open source y productos .NET</p>
+      </div>
+
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="#ecosistema" class="hover:text-cyan-300">Ecosistema</a>
+        <a href="#servicios" class="hover:text-cyan-300">Servicios</a>
+        <a href="#opensource" class="hover:text-cyan-300">Open Source</a>
+        <a href="#premium" class="hover:text-cyan-300">Premium</a>
+        <a href="#lab" class="hover:text-cyan-300">Lab</a>
         <a href="#contacto" class="hover:text-cyan-300">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="text-center py-20 bg-gradient-to-b from-slate-900 to-slate-800">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6">
-      Herramientas .NET de aguas profundas, listas para producción
-    </h2>
-    <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
-      En HadalisTech diseñamos librerías Open Source y soluciones Pro que simplifican tu stack .NET.<br>
-      Menos código repetitivo, menos errores y más velocidad para llegar a producción con confianza.
-    </p>
+  <section class="relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+      <p class="uppercase tracking-[0.25em] text-cyan-400 text-sm mb-4">
+        Tecnología de aguas profundas, lista para producción
+      </p>
+
+      <h2 class="text-4xl md:text-6xl font-bold leading-tight max-w-5xl mx-auto mb-6">
+        Construimos <span class="text-cyan-400">soluciones .NET</span> que combinan
+        consultoría, open source y productos premium para acelerar negocios reales
+      </h2>
+
+      <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+        En HadalisTech ayudamos a equipos y empresas a construir mejor software:
+        desde librerías open source y herramientas premium, hasta consultoría técnica,
+        desarrollo a medida y soluciones SaaS para operación de negocio.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#servicios"
+           class="bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition">
+          Ver servicios
+        </a>
+        <a href="#ecosistema"
+           class="border border-slate-700 text-white font-semibold px-6 py-3 rounded-xl hover:border-cyan-500 hover:text-cyan-300 transition">
+          Explorar ecosistema
+        </a>
+      </div>
+    </div>
   </section>
 
-  <!-- Productos -->
-  <section id="productos" class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10">
-    <!-- TinyBlueWhale -->
-    <div class="bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-cyan-500/30 transition">
-      <div class="flex items-center gap-4 mb-3">
-        <span class="text-4xl">🐋</span>
-        <h3 class="text-2xl font-bold text-cyan-300">TinyBlueWhale (Open Source)</h3>
-      </div>
-      <p class="text-slate-300 mb-4">
-        TinyBlueWhale es una colección de librerías <strong>open source bajo MIT</strong> para proyectos .NET.<br>
-        Simples, confiables y diseñadas para reemplazar dependencias pesadas con soluciones claras y ligeras.
+  <!-- Ecosistema -->
+  <section id="ecosistema" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="text-center mb-14">
+      <h3 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">Nuestro ecosistema</h3>
+      <p class="text-slate-300 max-w-3xl mx-auto">
+        No somos solo una librería, ni solo una consultora. Estamos construyendo un ecosistema modular:
+        servicios, open source, productos premium y contenido técnico que se alimentan entre sí.
       </p>
-      <a href="https://github.com/hadalistech/TinyBlueWhale.Mapper" 
-         class="inline-block bg-cyan-500 text-black font-semibold px-4 py-2 rounded-xl hover:bg-cyan-400">
-         Ver repositorios
-      </a>
     </div>
 
-    <!-- Leviathan -->
-    <div class="bg-slate-800 rounded-2xl p-6 shadow-lg border border-dashed border-cyan-600 opacity-90">
-      <div class="flex items-center gap-4 mb-3">
-        <!-- Dragón azul SVG -->
-        <div class="w-10 h-10 shrink-0">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M352 188.5L300.1 175.5C293.6 173.9 288.8 168.4 288.1 161.7C287.4 155 290.9 148.6 296.8 145.6L337.6 125.2L294.3 92.7C288.8 88.6 286.5 81.4 288.7 74.8C290.9 68.2 297.1 64 304 64L464 64C494.2 64 522.7 78.2 540.8 102.4L598.4 179.2C604.6 187.5 608 197.6 608 208C608 234.5 586.5 256 560 256L538.5 256C521.5 256 505.2 249.3 493.2 237.3L479.9 224L447.9 224L447.9 245.5C447.9 270.3 460.7 293.4 481.7 306.6L588.3 373.2C620.4 393.3 639.9 428.4 639.9 466.3C639.9 526.9 590.8 576.1 530.1 576.1L32.3 576C29 576 25.7 575.6 22.7 574.6C13.5 571.8 6 565 2.3 556C1 552.7 .1 549.1 0 545.3C-.2 541.6 .3 538 1.3 534.6C4.1 525.4 10.9 517.9 19.9 514.2C22.9 513 26.1 512.2 29.4 512L433.3 476C441.6 475.3 448 468.3 448 459.9C448 455.6 446.3 451.5 443.3 448.5L398.9 404.1C368.9 374.1 352 333.4 352 291L352 188.5zM512 136.3C512 136.2 512 136.1 512 136C512 135.9 512 135.8 512 135.7L512 136.3zM510.7 143.7L464.3 132.1C464.1 133.4 464 134.7 464 136C464 149.3 474.7 160 488 160C498.6 160 507.5 153.2 510.7 143.7zM130.9 180.5C147.2 166 171.3 164.3 189.4 176.4L320 263.4L320 290.9C320 323.7 328.4 355.7 344 383.9L112 383.9C105.3 383.9 99.3 379.7 97 373.5C94.7 367.3 96.5 360.2 101.6 355.8L171 296.3L18.4 319.8C11.4 320.9 4.5 317.2 1.5 310.8C-1.5 304.4 .1 296.8 5.4 292L130.9 180.5z"/></svg>
+    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+      <!-- Kraken -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg hover:border-cyan-600 transition">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="text-4xl">🦑</span>
+          <div>
+            <h4 class="text-xl font-bold text-cyan-300">Kraken</h4>
+            <p class="text-xs uppercase tracking-wider text-slate-400">Consultoría & Delivery</p>
+          </div>
         </div>
-        <h3 class="text-2xl font-bold text-cyan-300">Leviathan (Próximamente)</h3>
+        <p class="text-slate-300 mb-4">
+          Nuestra línea de consultoría y servicios a la medida. Aquí entra
+          <strong>Technology Adventure</strong> como brazo de ejecución para proyectos digitales,
+          desarrollo web, apps, mantenimiento y delivery técnico.
+        </p>
+        <ul class="text-sm text-slate-400 space-y-2">
+          <li>• Consultoría técnica y arquitectura</li>
+          <li>• Desarrollo a medida</li>
+          <li>• MVPs, sitios, apps y soporte</li>
+          <li>• Proyectos para empresas y pymes</li>
+        </ul>
       </div>
-      <p class="text-slate-300 mb-4">
-        Leviathan será nuestra suite <strong>premium para .NET</strong>:<br>
-        • <strong>Source Generators</strong> para máxima performance.<br>
-        • <strong>Validación en startup</strong> para seguridad en producción.<br>
-        • <strong>Soporte profesional</strong> para entornos críticos.<br><br>
-        Actualmente en desarrollo — pronto disponible para empresas y equipos que buscan más potencia que las librerías OSS tradicionales.
-      </p>
-      <span class="inline-block bg-slate-700 text-slate-400 font-semibold px-4 py-2 rounded-xl">
-        Próximamente
-      </span>
+
+      <!-- TinyBlueWhale -->
+      <div id="opensource" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg hover:border-cyan-600 transition">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="text-4xl">🐋</span>
+          <div>
+            <h4 class="text-xl font-bold text-cyan-300">TinyBlueWhale</h4>
+            <p class="text-xs uppercase tracking-wider text-slate-400">Open Source NuGets</p>
+          </div>
+        </div>
+        <p class="text-slate-300 mb-4">
+          Colección de librerías <strong>open source bajo MIT</strong> para proyectos .NET.
+          Livianas, claras y enfocadas en producción para reducir código repetitivo
+          y evitar dependencias innecesariamente pesadas.
+        </p>
+        <ul class="text-sm text-slate-400 space-y-2 mb-5">
+          <li>• Librerías simples y reutilizables</li>
+          <li>• Enfoque real en backend .NET</li>
+          <li>• Base de autoridad técnica y comunidad</li>
+        </ul>
+        <a href="https://github.com/hadalistech/TinyBlueWhale.Mapper"
+           class="inline-block bg-cyan-500 text-slate-950 font-semibold px-4 py-2 rounded-xl hover:bg-cyan-400 transition">
+          Ver repositorios
+        </a>
+      </div>
+
+      <!-- Leviathan -->
+      <div id="premium" class="bg-slate-900 border border-cyan-700/40 rounded-2xl p-6 shadow-lg hover:border-cyan-500 transition">
+        <div class="flex items-center gap-4 mb-4">
+           <div class="w-10 h-10 shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M352 188.5L300.1 175.5C293.6 173.9 288.8 168.4 288.1 161.7C287.4 155 290.9 148.6 296.8 145.6L337.6 125.2L294.3 92.7C288.8 88.6 286.5 81.4 288.7 74.8C290.9 68.2 297.1 64 304 64L464 64C494.2 64 522.7 78.2 540.8 102.4L598.4 179.2C604.6 187.5 608 197.6 608 208C608 234.5 586.5 256 560 256L538.5 256C521.5 256 505.2 249.3 493.2 237.3L479.9 224L447.9 224L447.9 245.5C447.9 270.3 460.7 293.4 481.7 306.6L588.3 373.2C620.4 393.3 639.9 428.4 639.9 466.3C639.9 526.9 590.8 576.1 530.1 576.1L32.3 576C29 576 25.7 575.6 22.7 574.6C13.5 571.8 6 565 2.3 556C1 552.7 .1 549.1 0 545.3C-.2 541.6 .3 538 1.3 534.6C4.1 525.4 10.9 517.9 19.9 514.2C22.9 513 26.1 512.2 29.4 512L433.3 476C441.6 475.3 448 468.3 448 459.9C448 455.6 446.3 451.5 443.3 448.5L398.9 404.1C368.9 374.1 352 333.4 352 291L352 188.5zM512 136.3C512 136.2 512 136.1 512 136C512 135.9 512 135.8 512 135.7L512 136.3zM510.7 143.7L464.3 132.1C464.1 133.4 464 134.7 464 136C464 149.3 474.7 160 488 160C498.6 160 507.5 153.2 510.7 143.7zM130.9 180.5C147.2 166 171.3 164.3 189.4 176.4L320 263.4L320 290.9C320 323.7 328.4 355.7 344 383.9L112 383.9C105.3 383.9 99.3 379.7 97 373.5C94.7 367.3 96.5 360.2 101.6 355.8L171 296.3L18.4 319.8C11.4 320.9 4.5 317.2 1.5 310.8C-1.5 304.4 .1 296.8 5.4 292L130.9 180.5z"/></svg>
+        </div>          
+          <div>
+            <h4 class="text-xl font-bold text-cyan-300">Leviathan</h4>
+            <p class="text-xs uppercase tracking-wider text-slate-400">Premium / SaaS / Pro Tools</p>
+          </div>
+        </div>
+        <p class="text-slate-300 mb-4">
+          Nuestra línea premium: suites SaaS, paquetes de paga, tooling especializado
+          y componentes para equipos que necesitan más potencia, soporte y velocidad
+          que la oferta open source tradicional.
+        </p>
+        <ul class="text-sm text-slate-400 space-y-2">
+          <li>• Source Generators</li>
+          <li>• Startup validation y hardening</li>
+          <li>• Tooling Pro para backend</li>
+          <li>• SaaS verticales para operación</li>
+        </ul>
+        <span class="inline-block mt-5 bg-slate-800 text-slate-300 font-semibold px-4 py-2 rounded-xl">
+          Próximamente
+        </span>
+      </div>
+
+      <!-- Abyss Lab -->
+      <div id="lab" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg hover:border-cyan-600 transition">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="text-4xl">🌌</span>
+          <div>
+            <h4 class="text-xl font-bold text-cyan-300">Abyss Lab</h4>
+            <p class="text-xs uppercase tracking-wider text-slate-400">Contenido & Comunidad</p>
+          </div>
+        </div>
+        <p class="text-slate-300 mb-4">
+          Espacio para artículos, demos, experimentos, plantillas, aprendizajes técnicos
+          y contenido de arquitectura. La idea es construir comunidad y convertir conocimiento
+          en autoridad, leads y futuras oportunidades comerciales.
+        </p>
+        <ul class="text-sm text-slate-400 space-y-2">
+          <li>• Artículos técnicos</li>
+          <li>• Labs y demos</li>
+          <li>• Boilerplates y aceleradores</li>
+          <li>• Comunidad y aprendizaje</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Donaciones -->
-  <section id="donaciones" class="text-center py-16 bg-slate-800">
-    <h3 class="text-3xl font-bold text-cyan-300 mb-6">💙 Haz crecer a la ballenita</h3>
-    <p class="text-slate-300 mb-6">
-      Cada donación nos ayuda a mantener vivo el Open Source y seguir explorando las profundidades.<br>
-      Con tu apoyo, TinyBlueWhale seguirá nadando y nuevas criaturas emergerán.
+  <!-- Servicios -->
+  <section id="servicios" class="bg-slate-900 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <h3 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">Servicios de consultoría y desarrollo</h3>
+        <p class="text-slate-300 max-w-3xl mx-auto">
+          Desde arquitectura backend hasta desarrollo de soluciones a medida. Kraken es nuestra
+          entrada comercial para proyectos de consultoría, implementación y delivery técnico.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+          <h4 class="text-xl font-semibold text-cyan-300 mb-3">Arquitectura .NET</h4>
+          <p class="text-slate-300 text-sm">
+            Diseño de backend, revisión de arquitectura, escalabilidad, modularidad y mejores prácticas
+            para sistemas listos para producción.
+          </p>
+        </div>
+
+        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+          <h4 class="text-xl font-semibold text-cyan-300 mb-3">Desarrollo a medida</h4>
+          <p class="text-slate-300 text-sm">
+            Sitios web, apps, dashboards, herramientas internas y plataformas orientadas a negocio,
+            ejecutadas con apoyo de Technology Adventure.
+          </p>
+        </div>
+
+        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+          <h4 class="text-xl font-semibold text-cyan-300 mb-3">Optimización y refactor</h4>
+          <p class="text-slate-300 text-sm">
+            Mejora de performance, refactor técnico, simplificación de código, revisión de APIs,
+            consultas y estabilización de proyectos existentes.
+          </p>
+        </div>
+
+        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+          <h4 class="text-xl font-semibold text-cyan-300 mb-3">Soporte técnico</h4>
+          <p class="text-slate-300 text-sm">
+            Acompañamiento para equipos, soporte mensual, resolución de issues críticos
+            y evolución continua de productos digitales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Casos de enfoque -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <h3 class="text-3xl font-bold text-cyan-300 mb-4">Cómo trabajamos</h3>
+        <p class="text-slate-300 mb-6">
+          Nuestro enfoque conecta servicios, comunidad y producto. En lugar de construir piezas aisladas,
+          buscamos que cada proyecto nos deje mejor posicionados para el siguiente:
+          más experiencia, más librerías reutilizables y más activos propios.
+        </p>
+
+        <div class="space-y-4">
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <h4 class="font-semibold text-white mb-2">1. Consultoría y delivery</h4>
+            <p class="text-slate-400 text-sm">
+              Entramos resolviendo necesidades reales de empresas y negocios. Eso genera flujo,
+              experiencia y casos de uso concretos.
+            </p>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <h4 class="font-semibold text-white mb-2">2. Reutilización inteligente</h4>
+            <p class="text-slate-400 text-sm">
+              Lo que construimos bien se convierte en componentes, plantillas, librerías o tooling
+              reutilizable dentro del ecosistema HadalisTech.
+            </p>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <h4 class="font-semibold text-white mb-2">3. Producto y escalabilidad</h4>
+            <p class="text-slate-400 text-sm">
+              Las mejores ideas evolucionan a NuGets open source, herramientas premium o SaaS verticales
+              orientados a resolver problemas repetidos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
+        <h3 class="text-2xl font-bold text-cyan-300 mb-4">Enfoques iniciales del portafolio</h3>
+        <div class="space-y-4 text-slate-300">
+          <div>
+            <h4 class="font-semibold text-white">Kraken / Technology Adventure</h4>
+            <p class="text-sm text-slate-400">Landing pages, sitios, MVPs, mantenimiento, soporte y delivery comercial.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">TinyBlueWhale</h4>
+            <p class="text-sm text-slate-400">Helpers, utilidades, paquetes ligeros y herramientas open source para .NET.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">Leviathan</h4>
+            <p class="text-sm text-slate-400">SaaS verticales, paquetes Pro, source generators y tooling orientado a valor empresarial.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white">Abyss Lab</h4>
+            <p class="text-sm text-slate-400">Contenido técnico, experimentos, comunidad y autoridad de marca.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comunidad y donaciones -->
+  <section id="donaciones" class="text-center py-20 bg-slate-900 border-y border-slate-800">
+    <h3 class="text-3xl font-bold text-cyan-300 mb-6">💙 Apoya el ecosistema HadalisTech</h3>
+    <p class="text-slate-300 max-w-3xl mx-auto mb-8">
+      Si te sirven nuestras librerías, artículos o herramientas, tu apoyo ayuda a mantener vivo el open source,
+      documentar mejor, liberar nuevos paquetes y seguir construyendo productos útiles para la comunidad.
     </p>
-    <div class="space-x-6">
-      <a href="https://github.com/sponsors/hadalistech" 
-         class="bg-pink-500 px-4 py-2 rounded-xl font-semibold hover:bg-pink-400">
-         GitHub Sponsors
+
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="https://github.com/sponsors/hadalistech"
+         class="bg-pink-500 px-5 py-3 rounded-xl font-semibold text-white hover:bg-pink-400 transition">
+        GitHub Sponsors
       </a>
-      <a href="https://www.buymeacoffee.com/hadalistecg" 
-         class="bg-yellow-400 text-black px-4 py-2 rounded-xl font-semibold hover:bg-yellow-300">
-         Buy Me a Coffee
+      <a href="https://www.buymeacoffee.com/hadalistecg"
+         class="bg-yellow-400 text-black px-5 py-3 rounded-xl font-semibold hover:bg-yellow-300 transition">
+        Buy Me a Coffee
       </a>
     </div>
   </section>
 
-  <footer id="contacto" class="bg-slate-900 text-center py-8">
-    <p class="text-slate-300">¿Tienes una idea o quieres colaborar? Escríbenos:</p>
+  <!-- CTA final -->
+  <section class="max-w-6xl mx-auto px-6 py-20 text-center">
+    <h3 class="text-3xl md:text-4xl font-bold mb-4">¿Tienes una idea, proyecto o necesidad técnica?</h3>
+    <p class="text-slate-300 max-w-2xl mx-auto mb-8">
+      Podemos ayudarte desde distintos frentes: consultoría, desarrollo a medida, open source,
+      tooling premium o evolución de productos digitales.
+    </p>
+    <a href="mailto:hadalistech@gmail.com"
+       class="inline-block bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition">
+      Hablemos
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto" class="bg-slate-950 text-center py-8 border-t border-slate-800">
+    <p class="text-slate-300">Contacto directo:</p>
     <p class="text-cyan-400 font-semibold">📧 hadalistech@gmail.com</p>
-    <p class="text-slate-500 text-sm mt-2">© 2025 HadalisTech. Todos los derechos reservados.</p>
+    <p class="text-slate-500 text-sm mt-2">© 2026 HadalisTech. Ecosistema de consultoría, open source y productos .NET.</p>
   </footer>
 </body>
 </html>
