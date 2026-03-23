@@ -3,316 +3,456 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HadalisTech 🌊</title>
+  <title>HadalisTech | Kraken</title>
+  <meta
+    name="description"
+    content="HadalisTech ayuda a equipos y pymes con integraciones, migraciones y automatización operativa mediante Kraken, su línea de consultoría y delivery técnico."
+  />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .glass {
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-white font-sans">
+<body class="bg-slate-950 text-white font-sans antialiased">
   <!-- Header -->
-  <header class="bg-slate-900/95 border-b border-slate-800 sticky top-0 z-50 backdrop-blur">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
       <div>
-        <h1 class="text-2xl font-bold text-cyan-400">HadalisTech 🌊</h1>
-        <p class="text-xs text-slate-400">Arquitectura, consultoría, open source y productos .NET</p>
+        <a href="#" class="text-2xl font-bold text-cyan-400 tracking-tight">HadalisTech 🌊</a>
+        <p class="text-xs text-slate-400 mt-1">
+          Kraken · Integraciones, migraciones y automatización operativa
+        </p>
       </div>
 
-      <nav class="hidden md:flex space-x-6 text-sm">
-        <a href="#ecosistema" class="hover:text-cyan-300">Ecosistema</a>
-        <a href="#servicios" class="hover:text-cyan-300">Servicios</a>
-        <a href="#opensource" class="hover:text-cyan-300">Open Source</a>
-        <a href="#premium" class="hover:text-cyan-300">Premium</a>
-        <a href="#lab" class="hover:text-cyan-300">Lab</a>
-        <a href="#contacto" class="hover:text-cyan-300">Contacto</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#servicios" class="hover:text-cyan-300 transition">Servicios</a>
+        <a href="#proceso" class="hover:text-cyan-300 transition">Cómo trabajamos</a>
+        <a href="#enfoque" class="hover:text-cyan-300 transition">Enfoque</a>
+        <a
+          href="https://www.linkedin.com/company/hadalistech/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-cyan-300 transition"
+        >
+          LinkedIn
+        </a>
+        <a href="#contacto" class="hover:text-cyan-300 transition">Contacto</a>
       </nav>
+
+      <a
+        href="#contacto"
+        class="hidden md:inline-flex bg-cyan-500 text-slate-950 font-semibold px-4 py-2 rounded-xl hover:bg-cyan-400 transition"
+      >
+        Hablemos
+      </a>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
-    <div class="max-w-7xl mx-auto px-6 py-24 text-center">
-      <p class="uppercase tracking-[0.25em] text-cyan-400 text-sm mb-4">
-        Tecnología de aguas profundas, lista para producción
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-[-6rem] left-1/2 -translate-x-1/2 w-[42rem] h-[42rem] bg-cyan-500/10 blur-3xl rounded-full"></div>
+      <div class="absolute bottom-[-8rem] right-[-6rem] w-[24rem] h-[24rem] bg-sky-500/10 blur-3xl rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6 py-24 md:py-32 text-center">
+      <p class="uppercase tracking-[0.28em] text-cyan-400 text-sm mb-4">
+        Kraken by HadalisTech
       </p>
 
-      <h2 class="text-4xl md:text-6xl font-bold leading-tight max-w-5xl mx-auto mb-6">
-        Construimos <span class="text-cyan-400">soluciones .NET</span> que combinan
-        consultoría, open source y productos premium para acelerar negocios reales
-      </h2>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight max-w-5xl mx-auto mb-6">
+        Software útil para
+        <span class="text-cyan-400">integraciones, migraciones y automatización operativa</span>
+      </h1>
 
       <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
-        En HadalisTech ayudamos a equipos y empresas a construir mejor software:
-        desde librerías open source y herramientas premium, hasta consultoría técnica,
-        desarrollo a medida y soluciones SaaS para operación de negocio.
+        Ayudamos a equipos y pymes a resolver procesos manuales, sistemas desconectados
+        y cuellos de botella técnicos con soluciones claras, ejecutables y sin sobreingeniería.
       </p>
 
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#servicios"
-           class="bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <a
+          href="#contacto"
+          class="bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition"
+        >
+          Hablemos de tu proyecto
+        </a>
+        <a
+          href="#servicios"
+          class="border border-slate-700 text-white font-semibold px-6 py-3 rounded-xl hover:border-cyan-500 hover:text-cyan-300 transition"
+        >
           Ver servicios
         </a>
-        <a href="#ecosistema"
-           class="border border-slate-700 text-white font-semibold px-6 py-3 rounded-xl hover:border-cyan-500 hover:text-cyan-300 transition">
-          Explorar ecosistema
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ecosistema -->
-  <section id="ecosistema" class="max-w-7xl mx-auto px-6 py-20">
-    <div class="text-center mb-14">
-      <h3 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">Nuestro ecosistema</h3>
-      <p class="text-slate-300 max-w-3xl mx-auto">
-        No somos solo una librería, ni solo una consultora. Estamos construyendo un ecosistema modular:
-        servicios, open source, productos premium y contenido técnico que se alimentan entre sí.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-      <!-- Kraken -->
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg hover:border-cyan-600 transition">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="text-4xl">🦑</span>
-          <div>
-            <h4 class="text-xl font-bold text-cyan-300">Kraken</h4>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Consultoría & Delivery</p>
-          </div>
-        </div>
-        <p class="text-slate-300 mb-4">
-          Nuestra línea de consultoría y servicios a la medida. Aquí entra
-          <strong>Technology Adventure</strong> como brazo de ejecución para proyectos digitales,
-          desarrollo web, apps, mantenimiento y delivery técnico.
-        </p>
-        <ul class="text-sm text-slate-400 space-y-2">
-          <li>• Consultoría técnica y arquitectura</li>
-          <li>• Desarrollo a medida</li>
-          <li>• MVPs, sitios, apps y soporte</li>
-          <li>• Proyectos para empresas y pymes</li>
-        </ul>
       </div>
 
-      <!-- TinyBlueWhale -->
-      <div id="opensource" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg hover:border-cyan-600 transition">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="text-4xl">🐋</span>
-          <div>
-            <h4 class="text-xl font-bold text-cyan-300">TinyBlueWhale</h4>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Open Source NuGets</p>
-          </div>
+      <div class="grid sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-left">
+        <div class="glass border border-slate-800 rounded-2xl p-5">
+          <p class="text-cyan-300 font-semibold mb-2">Integraciones</p>
+          <p class="text-sm text-slate-300">
+            APIs, facturación, pagos, CRMs, ERPs y herramientas internas.
+          </p>
         </div>
-        <p class="text-slate-300 mb-4">
-          Colección de librerías <strong>open source bajo MIT</strong> para proyectos .NET.
-          Livianas, claras y enfocadas en producción para reducir código repetitivo
-          y evitar dependencias innecesariamente pesadas.
-        </p>
-        <ul class="text-sm text-slate-400 space-y-2 mb-5">
-          <li>• Librerías simples y reutilizables</li>
-          <li>• Enfoque real en backend .NET</li>
-          <li>• Base de autoridad técnica y comunidad</li>
-        </ul>
-        <a href="https://github.com/hadalistech/TinyBlueWhale.Mapper"
-           class="inline-block bg-cyan-500 text-slate-950 font-semibold px-4 py-2 rounded-xl hover:bg-cyan-400 transition">
-          Ver repositorios
-        </a>
-      </div>
 
-      <!-- Leviathan -->
-      <div id="premium" class="bg-slate-900 border border-cyan-700/40 rounded-2xl p-6 shadow-lg hover:border-cyan-500 transition">
-        <div class="flex items-center gap-4 mb-4">
-           <div class="w-10 h-10 shrink-0">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M352 188.5L300.1 175.5C293.6 173.9 288.8 168.4 288.1 161.7C287.4 155 290.9 148.6 296.8 145.6L337.6 125.2L294.3 92.7C288.8 88.6 286.5 81.4 288.7 74.8C290.9 68.2 297.1 64 304 64L464 64C494.2 64 522.7 78.2 540.8 102.4L598.4 179.2C604.6 187.5 608 197.6 608 208C608 234.5 586.5 256 560 256L538.5 256C521.5 256 505.2 249.3 493.2 237.3L479.9 224L447.9 224L447.9 245.5C447.9 270.3 460.7 293.4 481.7 306.6L588.3 373.2C620.4 393.3 639.9 428.4 639.9 466.3C639.9 526.9 590.8 576.1 530.1 576.1L32.3 576C29 576 25.7 575.6 22.7 574.6C13.5 571.8 6 565 2.3 556C1 552.7 .1 549.1 0 545.3C-.2 541.6 .3 538 1.3 534.6C4.1 525.4 10.9 517.9 19.9 514.2C22.9 513 26.1 512.2 29.4 512L433.3 476C441.6 475.3 448 468.3 448 459.9C448 455.6 446.3 451.5 443.3 448.5L398.9 404.1C368.9 374.1 352 333.4 352 291L352 188.5zM512 136.3C512 136.2 512 136.1 512 136C512 135.9 512 135.8 512 135.7L512 136.3zM510.7 143.7L464.3 132.1C464.1 133.4 464 134.7 464 136C464 149.3 474.7 160 488 160C498.6 160 507.5 153.2 510.7 143.7zM130.9 180.5C147.2 166 171.3 164.3 189.4 176.4L320 263.4L320 290.9C320 323.7 328.4 355.7 344 383.9L112 383.9C105.3 383.9 99.3 379.7 97 373.5C94.7 367.3 96.5 360.2 101.6 355.8L171 296.3L18.4 319.8C11.4 320.9 4.5 317.2 1.5 310.8C-1.5 304.4 .1 296.8 5.4 292L130.9 180.5z"/></svg>
-        </div>          
-          <div>
-            <h4 class="text-xl font-bold text-cyan-300">Leviathan</h4>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Premium / SaaS / Pro Tools</p>
-          </div>
+        <div class="glass border border-slate-800 rounded-2xl p-5">
+          <p class="text-cyan-300 font-semibold mb-2">Migraciones</p>
+          <p class="text-sm text-slate-300">
+            Sistemas, procesos y datos movidos con orden y foco operativo.
+          </p>
         </div>
-        <p class="text-slate-300 mb-4">
-          Nuestra línea premium: suites SaaS, paquetes de paga, tooling especializado
-          y componentes para equipos que necesitan más potencia, soporte y velocidad
-          que la oferta open source tradicional.
-        </p>
-        <ul class="text-sm text-slate-400 space-y-2">
-          <li>• Source Generators</li>
-          <li>• Startup validation y hardening</li>
-          <li>• Tooling Pro para backend</li>
-          <li>• SaaS verticales para operación</li>
-        </ul>
-        <span class="inline-block mt-5 bg-slate-800 text-slate-300 font-semibold px-4 py-2 rounded-xl">
-          Próximamente
-        </span>
-      </div>
 
-      <!-- Abyss Lab -->
-      <div id="lab" class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg hover:border-cyan-600 transition">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="text-4xl">🌌</span>
-          <div>
-            <h4 class="text-xl font-bold text-cyan-300">Abyss Lab</h4>
-            <p class="text-xs uppercase tracking-wider text-slate-400">Contenido & Comunidad</p>
-          </div>
+        <div class="glass border border-slate-800 rounded-2xl p-5">
+          <p class="text-cyan-300 font-semibold mb-2">Automatización</p>
+          <p class="text-sm text-slate-300">
+            Flujos manuales convertidos en procesos más confiables y trazables.
+          </p>
         </div>
-        <p class="text-slate-300 mb-4">
-          Espacio para artículos, demos, experimentos, plantillas, aprendizajes técnicos
-          y contenido de arquitectura. La idea es construir comunidad y convertir conocimiento
-          en autoridad, leads y futuras oportunidades comerciales.
-        </p>
-        <ul class="text-sm text-slate-400 space-y-2">
-          <li>• Artículos técnicos</li>
-          <li>• Labs y demos</li>
-          <li>• Boilerplates y aceleradores</li>
-          <li>• Comunidad y aprendizaje</li>
-        </ul>
       </div>
     </div>
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="bg-slate-900 py-20">
+  <section id="servicios" class="bg-slate-900 py-20 border-y border-slate-800">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-14">
-        <h3 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">Servicios de consultoría y desarrollo</h3>
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">
+          Servicios enfocados en resolver trabajo atorado
+        </h2>
         <p class="text-slate-300 max-w-3xl mx-auto">
-          Desde arquitectura backend hasta desarrollo de soluciones a medida. Kraken es nuestra
-          entrada comercial para proyectos de consultoría, implementación y delivery técnico.
+          Entramos donde ya existe fricción operativa real: procesos manuales,
+          sistemas desconectados, migraciones pendientes o flujos que ya no escalan bien.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-          <h4 class="text-xl font-semibold text-cyan-300 mb-3">Arquitectura .NET</h4>
-          <p class="text-slate-300 text-sm">
-            Diseño de backend, revisión de arquitectura, escalabilidad, modularidad y mejores prácticas
-            para sistemas listos para producción.
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-600 transition">
+          <div class="text-3xl mb-4">🔌</div>
+          <h3 class="text-xl font-semibold text-cyan-300 mb-3">Integraciones entre sistemas</h3>
+          <p class="text-slate-300 text-sm leading-6 mb-4">
+            Conectamos APIs, facturación, pagos, CRMs, ERPs y herramientas internas
+            para reducir retrabajo, errores y operación fragmentada.
           </p>
-        </div>
+          <ul class="text-sm text-slate-400 space-y-2">
+            <li>• Integración de servicios y APIs</li>
+            <li>• Conexión de flujos entre plataformas</li>
+            <li>• Automatización de intercambio de datos</li>
+          </ul>
+        </article>
 
-        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-          <h4 class="text-xl font-semibold text-cyan-300 mb-3">Desarrollo a medida</h4>
-          <p class="text-slate-300 text-sm">
-            Sitios web, apps, dashboards, herramientas internas y plataformas orientadas a negocio,
-            ejecutadas con apoyo de Technology Adventure.
+        <article class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-600 transition">
+          <div class="text-3xl mb-4">🚚</div>
+          <h3 class="text-xl font-semibold text-cyan-300 mb-3">Migraciones técnicas y de datos</h3>
+          <p class="text-slate-300 text-sm leading-6 mb-4">
+            Movemos sistemas, procesos o información de forma ordenada para reducir
+            riesgo, dependencia de flujos viejos y fricción operativa.
           </p>
-        </div>
+          <ul class="text-sm text-slate-400 space-y-2">
+            <li>• Migración de datos y estructuras</li>
+            <li>• Sustitución de procesos legacy</li>
+            <li>• Reorganización técnica con menor riesgo</li>
+          </ul>
+        </article>
 
-        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-          <h4 class="text-xl font-semibold text-cyan-300 mb-3">Optimización y refactor</h4>
-          <p class="text-slate-300 text-sm">
-            Mejora de performance, refactor técnico, simplificación de código, revisión de APIs,
-            consultas y estabilización de proyectos existentes.
+        <article class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-600 transition">
+          <div class="text-3xl mb-4">⚙️</div>
+          <h3 class="text-xl font-semibold text-cyan-300 mb-3">Automatización interna</h3>
+          <p class="text-slate-300 text-sm leading-6 mb-4">
+            Convertimos tareas repetitivas y manuales en flujos más confiables,
+            trazables y sostenibles para la operación del negocio.
           </p>
-        </div>
-
-        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-          <h4 class="text-xl font-semibold text-cyan-300 mb-3">Soporte técnico</h4>
-          <p class="text-slate-300 text-sm">
-            Acompañamiento para equipos, soporte mensual, resolución de issues críticos
-            y evolución continua de productos digitales.
-          </p>
-        </div>
+          <ul class="text-sm text-slate-400 space-y-2">
+            <li>• Procesos internos y operativos</li>
+            <li>• Reducción de pasos manuales</li>
+            <li>• Flujos con mejor visibilidad y control</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Casos de enfoque -->
+  <!-- Para quién -->
   <section class="max-w-7xl mx-auto px-6 py-20">
     <div class="grid lg:grid-cols-2 gap-10 items-start">
       <div>
-        <h3 class="text-3xl font-bold text-cyan-300 mb-4">Cómo trabajamos</h3>
-        <p class="text-slate-300 mb-6">
-          Nuestro enfoque conecta servicios, comunidad y producto. En lugar de construir piezas aisladas,
-          buscamos que cada proyecto nos deje mejor posicionados para el siguiente:
-          más experiencia, más librerías reutilizables y más activos propios.
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">
+          Trabajamos con equipos que ya tienen fricción operativa real
+        </h2>
+        <p class="text-slate-300 leading-7 mb-6">
+          No buscamos vender software genérico. Entramos cuando ya existe un problema
+          concreto que está frenando operación, visibilidad o ejecución técnica.
         </p>
 
         <div class="space-y-4">
           <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-            <h4 class="font-semibold text-white mb-2">1. Consultoría y delivery</h4>
+            <h3 class="font-semibold text-white mb-2">Pymes con procesos manuales</h3>
             <p class="text-slate-400 text-sm">
-              Entramos resolviendo necesidades reales de empresas y negocios. Eso genera flujo,
-              experiencia y casos de uso concretos.
+              Equipos que operan con herramientas desconectadas, tareas repetitivas o dependencias manuales.
             </p>
           </div>
 
           <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-            <h4 class="font-semibold text-white mb-2">2. Reutilización inteligente</h4>
+            <h3 class="font-semibold text-white mb-2">Equipos de tecnología con backlog técnico</h3>
             <p class="text-slate-400 text-sm">
-              Lo que construimos bien se convierte en componentes, plantillas, librerías o tooling
-              reutilizable dentro del ecosistema HadalisTech.
+              Integraciones frágiles, migraciones que se siguen pateando o flujos que nadie quiere tocar.
             </p>
           </div>
 
           <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-            <h4 class="font-semibold text-white mb-2">3. Producto y escalabilidad</h4>
+            <h3 class="font-semibold text-white mb-2">Agencias o software factories</h3>
             <p class="text-slate-400 text-sm">
-              Las mejores ideas evolucionan a NuGets open source, herramientas premium o SaaS verticales
-              orientados a resolver problemas repetidos.
+              Equipos que requieren apoyo puntual de ejecución técnica sin cargar más overhead interno.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
-        <h3 class="text-2xl font-bold text-cyan-300 mb-4">Enfoques iniciales del portafolio</h3>
+      <div id="enfoque" class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
+        <h2 class="text-2xl font-bold text-cyan-300 mb-4">Nuestro enfoque</h2>
+        <p class="text-slate-300 leading-7 mb-6">
+          HadalisTech es la marca madre. Hoy nuestro foco comercial está en
+          <strong>Kraken</strong>, nuestra línea de consultoría y delivery técnico.
+        </p>
+
         <div class="space-y-4 text-slate-300">
           <div>
-            <h4 class="font-semibold text-white">Kraken / Technology Adventure</h4>
-            <p class="text-sm text-slate-400">Landing pages, sitios, MVPs, mantenimiento, soporte y delivery comercial.</p>
+            <h3 class="font-semibold text-white">Primero resolvemos problemas reales</h3>
+            <p class="text-sm text-slate-400 mt-1">
+              El objetivo inmediato es generar valor y caja con ejecución técnica útil.
+            </p>
           </div>
+
           <div>
-            <h4 class="font-semibold text-white">TinyBlueWhale</h4>
-            <p class="text-sm text-slate-400">Helpers, utilidades, paquetes ligeros y herramientas open source para .NET.</p>
+            <h3 class="font-semibold text-white">Luego reutilizamos lo que vale la pena</h3>
+            <p class="text-sm text-slate-400 mt-1">
+              Lo que funciona bien puede evolucionar después a componentes reutilizables, tooling o producto.
+            </p>
           </div>
+
           <div>
-            <h4 class="font-semibold text-white">Leviathan</h4>
-            <p class="text-sm text-slate-400">SaaS verticales, paquetes Pro, source generators y tooling orientado a valor empresarial.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-white">Abyss Lab</h4>
-            <p class="text-sm text-slate-400">Contenido técnico, experimentos, comunidad y autoridad de marca.</p>
+            <h3 class="font-semibold text-white">Sin inflar arquitectura ni branding vacío</h3>
+            <p class="text-sm text-slate-400 mt-1">
+              Menos narrativa. Más resolución práctica, entregables claros y foco.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Comunidad y donaciones -->
-  <section id="donaciones" class="text-center py-20 bg-slate-900 border-y border-slate-800">
-    <h3 class="text-3xl font-bold text-cyan-300 mb-6">💙 Apoya el ecosistema HadalisTech</h3>
-    <p class="text-slate-300 max-w-3xl mx-auto mb-8">
-      Si te sirven nuestras librerías, artículos o herramientas, tu apoyo ayuda a mantener vivo el open source,
-      documentar mejor, liberar nuevos paquetes y seguir construyendo productos útiles para la comunidad.
-    </p>
+  <!-- Proceso -->
+  <section id="proceso" class="bg-slate-900 py-20 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">Cómo trabajamos</h2>
+        <p class="text-slate-300 max-w-3xl mx-auto">
+          Menos humo. Más ejecución. Entendemos el cuello de botella, definimos
+          un alcance viable y resolvemos sin meter complejidad innecesaria.
+        </p>
+      </div>
 
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="https://github.com/sponsors/hadalistech"
-         class="bg-pink-500 px-5 py-3 rounded-xl font-semibold text-white hover:bg-pink-400 transition">
-        GitHub Sponsors
-      </a>
-      <a href="https://www.buymeacoffee.com/hadalistecg"
-         class="bg-yellow-400 text-black px-5 py-3 rounded-xl font-semibold hover:bg-yellow-300 transition">
-        Buy Me a Coffee
-      </a>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">1</div>
+          <h3 class="font-semibold text-white mb-2">Detectamos el problema real</h3>
+          <p class="text-slate-400 text-sm leading-6">
+            Entendemos qué está roto, qué sigue siendo manual y qué impacto tiene hoy en operación, tiempo o errores.
+          </p>
+        </div>
+
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">2</div>
+          <h3 class="font-semibold text-white mb-2">Definimos una solución viable</h3>
+          <p class="text-slate-400 text-sm leading-6">
+            Aterrizamos un alcance claro y ejecutable, sin vender plataformas infladas ni arquitectura ornamental.
+          </p>
+        </div>
+
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">3</div>
+          <h3 class="font-semibold text-white mb-2">Ejecutamos con foco</h3>
+          <p class="text-slate-400 text-sm leading-6">
+            Integramos, migramos o automatizamos con entregables concretos, visibilidad de avance y criterio técnico.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CTA final -->
   <section class="max-w-6xl mx-auto px-6 py-20 text-center">
-    <h3 class="text-3xl md:text-4xl font-bold mb-4">¿Tienes una idea, proyecto o necesidad técnica?</h3>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      ¿Tienes un proceso manual, una integración pendiente o una migración atorada?
+    </h2>
     <p class="text-slate-300 max-w-2xl mx-auto mb-8">
-      Podemos ayudarte desde distintos frentes: consultoría, desarrollo a medida, open source,
-      tooling premium o evolución de productos digitales.
+      Cuéntanos qué necesitas resolver y te diremos rápido si podemos ayudarte.
     </p>
-    <a href="mailto:hadalistech@gmail.com"
-       class="inline-block bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition">
-      Hablemos
-    </a>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10">
+      <a
+        href="mailto:hadalistech@gmail.com?subject=Consulta%20Kraken"
+        class="inline-block bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition"
+      >
+        Hablemos de tu proyecto
+      </a>
+      <a
+        href="#contacto"
+        class="inline-block border border-slate-700 text-white font-semibold px-6 py-3 rounded-xl hover:border-cyan-500 hover:text-cyan-300 transition"
+      >
+        Ver contacto
+      </a>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-slate-900 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-3xl font-bold text-cyan-300 mb-4">Contacto</h2>
+          <p class="text-slate-300 leading-7 mb-6">
+            Si tienes un proyecto, una necesidad técnica puntual o un proceso operativo
+            que ya te está costando tiempo y errores, conversemos.
+          </p>
+
+          <div class="space-y-4 text-slate-300">
+            <p>
+              <span class="text-slate-500">Correo:</span><br />
+              <a href="mailto:hadalistech@gmail.com" class="text-cyan-400 font-semibold hover:text-cyan-300 transition">
+                hadalistech@gmail.com
+              </a>
+            </p>
+
+            <p>
+              <span class="text-slate-500">LinkedIn:</span><br />
+              <a
+                href="https://www.linkedin.com/company/hadalistech/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-cyan-400 font-semibold hover:text-cyan-300 transition"
+              >
+                linkedin.com/company/hadalistech
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-slate-950 border border-slate-800 rounded-3xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-6">Cuéntanos qué necesitas resolver</h3>
+
+          <form id="contactForm" class="space-y-5">
+            <div>
+              <label for="nombre" class="block text-sm text-slate-300 mb-2">Nombre</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                required
+                class="w-full rounded-xl bg-slate-900 border border-slate-700 px-4 py-3 text-white outline-none focus:border-cyan-500"
+                placeholder="Tu nombre"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm text-slate-300 mb-2">Correo</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                class="w-full rounded-xl bg-slate-900 border border-slate-700 px-4 py-3 text-white outline-none focus:border-cyan-500"
+                placeholder="tu@correo.com"
+              />
+            </div>
+
+            <div>
+              <label for="mensaje" class="block text-sm text-slate-300 mb-2">Problema o necesidad</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+                class="w-full rounded-xl bg-slate-900 border border-slate-700 px-4 py-3 text-white outline-none focus:border-cyan-500"
+                placeholder="Describe brevemente qué necesitas resolver"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition"
+            >
+              Enviar consulta
+            </button>
+
+            <p id="formMessage" class="text-sm text-slate-400"></p>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contacto" class="bg-slate-950 text-center py-8 border-t border-slate-800">
-    <p class="text-slate-300">Contacto directo:</p>
-    <p class="text-cyan-400 font-semibold">📧 hadalistech@gmail.com</p>
-    <p class="text-slate-500 text-sm mt-2">© 2026 HadalisTech. Ecosistema de consultoría, open source y productos .NET.</p>
+  <footer class="bg-slate-950 text-center py-8 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-slate-300">HadalisTech · Kraken</p>
+      <p class="text-slate-500 text-sm mt-2 mb-4">
+        Consultoría y delivery técnico para integraciones, migraciones y automatización operativa.
+      </p>
+      <div class="flex justify-center gap-6 text-sm">   
+        <a
+          href="https://www.linkedin.com/company/hadalistech/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-cyan-400 hover:text-cyan-300 transition"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="mailto:hadalistech@gmail.com"
+          class="text-cyan-400 hover:text-cyan-300 transition"
+        >
+          Correo
+        </a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+
+      if (!nombre || !email || !mensaje) {
+        formMessage.textContent = "Completa todos los campos antes de enviar.";
+        formMessage.className = "text-sm text-amber-400";
+        return;
+      }
+
+      const subject = encodeURIComponent("Consulta Kraken - " + nombre);
+      const body = encodeURIComponent(
+        "Nombre: " + nombre + "\n" +
+        "Correo: " + email + "\n\n" +
+        "Problema o necesidad:\n" + mensaje
+      );
+
+      window.location.href = `mailto:hadalistech@gmail.com?subject=${subject}&body=${body}`;
+
+      formMessage.textContent = "Se abrió tu cliente de correo para enviar la consulta.";
+      formMessage.className = "text-sm text-emerald-400";
+      contactForm.reset();
+    });
+  </script>
 </body>
 </html>
