@@ -3,456 +3,249 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HadalisTech | Kraken</title>
+  <title>HadalisTech | Integraciones y automatización operativa</title>
   <meta
     name="description"
-    content="HadalisTech ayuda a equipos y pymes con integraciones, migraciones y automatización operativa mediante Kraken, su línea de consultoría y delivery técnico."
+    content="HadalisTech ayuda a negocios y equipos a conectar sistemas, integrar APIs y automatizar flujos operativos para reducir errores, retrabajo y trabajo manual innecesario."
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
+    html { scroll-behavior: smooth; }
+    body {
+      background: linear-gradient(180deg, #020617 0%, #0f172a 52%, #020617 100%);
     }
-
     .glass {
-      background: rgba(15, 23, 42, 0.72);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(15, 23, 42, 0.58);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
   </style>
 </head>
-<body class="bg-slate-950 text-white font-sans antialiased">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+<body class="text-white font-sans antialiased">
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-xl">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
       <div>
-        <a href="#" class="text-2xl font-bold text-cyan-400 tracking-tight">HadalisTech 🌊</a>
-        <p class="text-xs text-slate-400 mt-1">
-          Kraken · Integraciones, migraciones y automatización operativa
-        </p>
+        <a href="#" class="text-2xl font-bold tracking-tight text-cyan-400">HadalisTech</a>
+        <p class="text-xs text-slate-400 mt-1">Integraciones y automatización operativa</p>
       </div>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-        <a href="#servicios" class="hover:text-cyan-300 transition">Servicios</a>
-        <a href="#proceso" class="hover:text-cyan-300 transition">Cómo trabajamos</a>
-        <a href="#enfoque" class="hover:text-cyan-300 transition">Enfoque</a>
-        <a
-          href="https://www.linkedin.com/company/hadalistech/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-cyan-300 transition"
-        >
-          LinkedIn
-        </a>
-        <a href="#contacto" class="hover:text-cyan-300 transition">Contacto</a>
-      </nav>
-
       <a
-        href="#contacto"
+        href="https://wa.me/5210000000000?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20contarles%20un%20caso%20que%20necesito%20resolver."
         class="hidden md:inline-flex bg-cyan-500 text-slate-950 font-semibold px-4 py-2 rounded-xl hover:bg-cyan-400 transition"
       >
-        Hablemos
+        Escríbenos por WhatsApp
       </a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+  <section class="relative overflow-hidden">
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute top-[-6rem] left-1/2 -translate-x-1/2 w-[42rem] h-[42rem] bg-cyan-500/10 blur-3xl rounded-full"></div>
-      <div class="absolute bottom-[-8rem] right-[-6rem] w-[24rem] h-[24rem] bg-sky-500/10 blur-3xl rounded-full"></div>
+      <div class="absolute top-[-7rem] left-1/2 -translate-x-1/2 w-[34rem] h-[34rem] bg-cyan-500/8 blur-3xl rounded-full"></div>
     </div>
 
-    <div class="relative max-w-6xl mx-auto px-6 py-24 md:py-32 text-center">
-      <p class="uppercase tracking-[0.28em] text-cyan-400 text-sm mb-4">
-        Kraken by HadalisTech
-      </p>
+    <div class="relative max-w-6xl mx-auto px-6 pt-24 pb-20 md:pt-28 md:pb-24 text-center">
+      <p class="uppercase tracking-[0.22em] text-cyan-400 text-sm mb-5">Partner técnico de confianza</p>
 
-      <h1 class="text-4xl md:text-6xl font-bold leading-tight max-w-5xl mx-auto mb-6">
-        Software útil para
-        <span class="text-cyan-400">integraciones, migraciones y automatización operativa</span>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 max-w-5xl mx-auto">
+        Conectamos sistemas, APIs y flujos operativos para reducir
+        <span class="text-cyan-400">errores y retrabajo</span>.
       </h1>
 
-      <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
-        Ayudamos a equipos y pymes a resolver procesos manuales, sistemas desconectados
-        y cuellos de botella técnicos con soluciones claras, ejecutables y sin sobreingeniería.
+      <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-8">
+        Si hoy tu operación depende de pasos manuales o de plataformas que no se hablan entre sí, HadalisTech te ayuda a resolverlo con integraciones claras, puntuales y bien aterrizadas.
       </p>
 
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <a
+          href="https://wa.me/5210000000000?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20contarles%20un%20caso%20que%20necesito%20resolver."
+          class="inline-flex items-center justify-center bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition"
+        >
+          Escríbenos por WhatsApp
+        </a>
         <a
           href="#contacto"
-          class="bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition"
+          class="inline-flex items-center justify-center border border-slate-700 text-white font-semibold px-6 py-3 rounded-xl hover:border-cyan-500 hover:text-cyan-300 transition"
         >
-          Hablemos de tu proyecto
-        </a>
-        <a
-          href="#servicios"
-          class="border border-slate-700 text-white font-semibold px-6 py-3 rounded-xl hover:border-cyan-500 hover:text-cyan-300 transition"
-        >
-          Ver servicios
+          Cuéntanos tu caso
         </a>
       </div>
 
-      <div class="grid sm:grid-cols-3 gap-4 max-w-4xl mx-auto text-left">
+      <div class="grid md:grid-cols-3 gap-4 text-left max-w-5xl mx-auto">
         <div class="glass border border-slate-800 rounded-2xl p-5">
           <p class="text-cyan-300 font-semibold mb-2">Integraciones</p>
-          <p class="text-sm text-slate-300">
-            APIs, facturación, pagos, CRMs, ERPs y herramientas internas.
-          </p>
+          <p class="text-sm text-slate-300">Conectamos sistemas y APIs que hoy operan por separado.</p>
         </div>
-
-        <div class="glass border border-slate-800 rounded-2xl p-5">
-          <p class="text-cyan-300 font-semibold mb-2">Migraciones</p>
-          <p class="text-sm text-slate-300">
-            Sistemas, procesos y datos movidos con orden y foco operativo.
-          </p>
-        </div>
-
         <div class="glass border border-slate-800 rounded-2xl p-5">
           <p class="text-cyan-300 font-semibold mb-2">Automatización</p>
-          <p class="text-sm text-slate-300">
-            Flujos manuales convertidos en procesos más confiables y trazables.
-          </p>
+          <p class="text-sm text-slate-300">Reducimos tareas manuales y flujos repetitivos.</p>
+        </div>
+        <div class="glass border border-slate-800 rounded-2xl p-5">
+          <p class="text-cyan-300 font-semibold mb-2">Soluciones puntuales</p>
+          <p class="text-sm text-slate-300">Construimos lo necesario para destrabar la operación.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Servicios -->
-  <section id="servicios" class="bg-slate-900 py-20 border-y border-slate-800">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">
-          Servicios enfocados en resolver trabajo atorado
-        </h2>
-        <p class="text-slate-300 max-w-3xl mx-auto">
-          Entramos donde ya existe fricción operativa real: procesos manuales,
-          sistemas desconectados, migraciones pendientes o flujos que ya no escalan bien.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-600 transition">
-          <div class="text-3xl mb-4">🔌</div>
-          <h3 class="text-xl font-semibold text-cyan-300 mb-3">Integraciones entre sistemas</h3>
-          <p class="text-slate-300 text-sm leading-6 mb-4">
-            Conectamos APIs, facturación, pagos, CRMs, ERPs y herramientas internas
-            para reducir retrabajo, errores y operación fragmentada.
-          </p>
-          <ul class="text-sm text-slate-400 space-y-2">
-            <li>• Integración de servicios y APIs</li>
-            <li>• Conexión de flujos entre plataformas</li>
-            <li>• Automatización de intercambio de datos</li>
-          </ul>
-        </article>
-
-        <article class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-600 transition">
-          <div class="text-3xl mb-4">🚚</div>
-          <h3 class="text-xl font-semibold text-cyan-300 mb-3">Migraciones técnicas y de datos</h3>
-          <p class="text-slate-300 text-sm leading-6 mb-4">
-            Movemos sistemas, procesos o información de forma ordenada para reducir
-            riesgo, dependencia de flujos viejos y fricción operativa.
-          </p>
-          <ul class="text-sm text-slate-400 space-y-2">
-            <li>• Migración de datos y estructuras</li>
-            <li>• Sustitución de procesos legacy</li>
-            <li>• Reorganización técnica con menor riesgo</li>
-          </ul>
-        </article>
-
-        <article class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-600 transition">
-          <div class="text-3xl mb-4">⚙️</div>
-          <h3 class="text-xl font-semibold text-cyan-300 mb-3">Automatización interna</h3>
-          <p class="text-slate-300 text-sm leading-6 mb-4">
-            Convertimos tareas repetitivas y manuales en flujos más confiables,
-            trazables y sostenibles para la operación del negocio.
-          </p>
-          <ul class="text-sm text-slate-400 space-y-2">
-            <li>• Procesos internos y operativos</li>
-            <li>• Reducción de pasos manuales</li>
-            <li>• Flujos con mejor visibilidad y control</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Para quién -->
-  <section class="max-w-7xl mx-auto px-6 py-20">
-    <div class="grid lg:grid-cols-2 gap-10 items-start">
+  <section class="border-y border-slate-800 bg-slate-950/30">
+    <div class="max-w-6xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-10 items-start">
       <div>
-        <h2 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">
-          Trabajamos con equipos que ya tienen fricción operativa real
-        </h2>
-        <p class="text-slate-300 leading-7 mb-6">
-          No buscamos vender software genérico. Entramos cuando ya existe un problema
-          concreto que está frenando operación, visibilidad o ejecución técnica.
-        </p>
-
-        <div class="space-y-4">
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-            <h3 class="font-semibold text-white mb-2">Pymes con procesos manuales</h3>
-            <p class="text-slate-400 text-sm">
-              Equipos que operan con herramientas desconectadas, tareas repetitivas o dependencias manuales.
-            </p>
-          </div>
-
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-            <h3 class="font-semibold text-white mb-2">Equipos de tecnología con backlog técnico</h3>
-            <p class="text-slate-400 text-sm">
-              Integraciones frágiles, migraciones que se siguen pateando o flujos que nadie quiere tocar.
-            </p>
-          </div>
-
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-            <h3 class="font-semibold text-white mb-2">Agencias o software factories</h3>
-            <p class="text-slate-400 text-sm">
-              Equipos que requieren apoyo puntual de ejecución técnica sin cargar más overhead interno.
-            </p>
-          </div>
+        <p class="text-cyan-400 font-semibold mb-3">Qué resolvemos</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-5">Entramos cuando los sistemas desconectados ya están costando tiempo y errores.</h2>
+        <div class="space-y-4 text-slate-300 leading-7">
+          <p><strong class="text-white">Sistemas que no se hablan entre sí.</strong><br />Tu equipo tiene que mover información entre plataformas porque no existe una conexión confiable entre ellas.</p>
+          <p><strong class="text-white">Integraciones pendientes o flujos atorados.</strong><br />Hay una API, plataforma o proceso que lleva tiempo frenando operación y sigue generando trabajo manual.</p>
+          <p><strong class="text-white">Errores y retrabajo.</strong><br />Se repiten tareas, se corrigen datos a mano o se pierde tiempo validando información en varios lugares.</p>
+          <p><strong class="text-white">Necesidad de una solución puntual.</strong><br />El negocio ya necesita una pieza técnica concreta para operar mejor y dejar de seguir parchando lo mismo.</p>
         </div>
       </div>
 
-      <div id="enfoque" class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
-        <h2 class="text-2xl font-bold text-cyan-300 mb-4">Nuestro enfoque</h2>
-        <p class="text-slate-300 leading-7 mb-6">
-          HadalisTech es la marca madre. Hoy nuestro foco comercial está en
-          <strong>Kraken</strong>, nuestra línea de consultoría y delivery técnico.
+      <div class="glass border border-slate-800 rounded-3xl p-8">
+        <p class="text-cyan-400 font-semibold mb-3">Oferta principal</p>
+        <h3 class="text-2xl font-bold mb-4">Sistemas Conectados</h3>
+        <p class="text-slate-300 leading-7 mb-5">
+          Servicio enfocado en conectar dos sistemas o un flujo principal para reducir errores, retrabajo y fricción operativa.
         </p>
-
-        <div class="space-y-4 text-slate-300">
-          <div>
-            <h3 class="font-semibold text-white">Primero resolvemos problemas reales</h3>
-            <p class="text-sm text-slate-400 mt-1">
-              El objetivo inmediato es generar valor y caja con ejecución técnica útil.
-            </p>
-          </div>
-
-          <div>
-            <h3 class="font-semibold text-white">Luego reutilizamos lo que vale la pena</h3>
-            <p class="text-sm text-slate-400 mt-1">
-              Lo que funciona bien puede evolucionar después a componentes reutilizables, tooling o producto.
-            </p>
-          </div>
-
-          <div>
-            <h3 class="font-semibold text-white">Sin inflar arquitectura ni branding vacío</h3>
-            <p class="text-sm text-slate-400 mt-1">
-              Menos narrativa. Más resolución práctica, entregables claros y foco.
-            </p>
-          </div>
+        <div class="space-y-3 text-sm text-slate-400 leading-7">
+          <p>• Integración entre dos plataformas</p>
+          <p>• Consumo o exposición de APIs</p>
+          <p>• Sincronización de información clave</p>
+          <p>• Automatización de un flujo principal</p>
+          <p>• Alcance sujeto a revisión técnica previa</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Proceso -->
-  <section id="proceso" class="bg-slate-900 py-20 border-y border-slate-800">
+  <section class="py-20">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl md:text-4xl font-bold text-cyan-300 mb-4">Cómo trabajamos</h2>
-        <p class="text-slate-300 max-w-3xl mx-auto">
-          Menos humo. Más ejecución. Entendemos el cuello de botella, definimos
-          un alcance viable y resolvemos sin meter complejidad innecesaria.
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="text-cyan-400 font-semibold mb-3">Ejemplos de proyectos</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Casos puntuales donde HadalisTech entra a resolver.</h2>
+        <p class="text-slate-300 leading-7">
+          No vendemos una plataforma infinita. Entramos a resolver el tramo técnico que hoy está frenando tu operación.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
-          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">1</div>
-          <h3 class="font-semibold text-white mb-2">Detectamos el problema real</h3>
-          <p class="text-slate-400 text-sm leading-6">
-            Entendemos qué está roto, qué sigue siendo manual y qué impacto tiene hoy en operación, tiempo o errores.
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6">
+          <h3 class="text-cyan-400 font-semibold text-2xl leading-tight mb-4">ERP ↔ CRM</h3>
+          <p class="text-slate-300 leading-7">
+            Conectamos plataformas que ya existen en la operación.
           </p>
         </div>
 
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
-          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">2</div>
-          <h3 class="font-semibold text-white mb-2">Definimos una solución viable</h3>
-          <p class="text-slate-400 text-sm leading-6">
-            Aterrizamos un alcance claro y ejecutable, sin vender plataformas infladas ni arquitectura ornamental.
+        <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6">
+          <h3 class="text-cyan-400 font-semibold text-2xl leading-tight mb-4">API ↔ sistema interno</h3>
+          <p class="text-slate-300 leading-7">
+            Movemos datos y acciones sin pasos manuales de por medio.
           </p>
         </div>
 
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6">
-          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">3</div>
-          <h3 class="font-semibold text-white mb-2">Ejecutamos con foco</h3>
-          <p class="text-slate-400 text-sm leading-6">
-            Integramos, migramos o automatizamos con entregables concretos, visibilidad de avance y criterio técnico.
+        <div class="bg-slate-950 border border-slate-800 rounded-3xl p-6">
+          <h3 class="text-cyan-400 font-semibold text-2xl leading-tight mb-4">Flujo operativo puntual</h3>
+          <p class="text-slate-300 leading-7">
+            Arreglamos el tramo crítico que hoy te hace perder tiempo.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA final -->
-  <section class="max-w-6xl mx-auto px-6 py-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-      ¿Tienes un proceso manual, una integración pendiente o una migración atorada?
-    </h2>
-    <p class="text-slate-300 max-w-2xl mx-auto mb-8">
-      Cuéntanos qué necesitas resolver y te diremos rápido si podemos ayudarte.
-    </p>
-
-    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10">
-      <a
-        href="mailto:hadalistech@gmail.com?subject=Consulta%20Kraken"
-        class="inline-block bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition"
-      >
-        Hablemos de tu proyecto
-      </a>
-      <a
-        href="#contacto"
-        class="inline-block border border-slate-700 text-white font-semibold px-6 py-3 rounded-xl hover:border-cyan-500 hover:text-cyan-300 transition"
-      >
-        Ver contacto
-      </a>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="bg-slate-900 border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-6 py-20">
-      <div class="grid lg:grid-cols-2 gap-10 items-start">
-        <div>
-          <h2 class="text-3xl font-bold text-cyan-300 mb-4">Contacto</h2>
-          <p class="text-slate-300 leading-7 mb-6">
-            Si tienes un proyecto, una necesidad técnica puntual o un proceso operativo
-            que ya te está costando tiempo y errores, conversemos.
-          </p>
-
-          <div class="space-y-4 text-slate-300">
-            <p>
-              <span class="text-slate-500">Correo:</span><br />
-              <a href="mailto:hadalistech@gmail.com" class="text-cyan-400 font-semibold hover:text-cyan-300 transition">
-                hadalistech@gmail.com
-              </a>
-            </p>
-
-            <p>
-              <span class="text-slate-500">LinkedIn:</span><br />
-              <a
-                href="https://www.linkedin.com/company/hadalistech/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-cyan-400 font-semibold hover:text-cyan-300 transition"
-              >
-                linkedin.com/company/hadalistech
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div class="bg-slate-950 border border-slate-800 rounded-3xl p-8">
-          <h3 class="text-xl font-semibold text-white mb-6">Cuéntanos qué necesitas resolver</h3>
-
-          <form id="contactForm" class="space-y-5">
-            <div>
-              <label for="nombre" class="block text-sm text-slate-300 mb-2">Nombre</label>
-              <input
-                id="nombre"
-                name="nombre"
-                type="text"
-                required
-                class="w-full rounded-xl bg-slate-900 border border-slate-700 px-4 py-3 text-white outline-none focus:border-cyan-500"
-                placeholder="Tu nombre"
-              />
-            </div>
-
-            <div>
-              <label for="email" class="block text-sm text-slate-300 mb-2">Correo</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                class="w-full rounded-xl bg-slate-900 border border-slate-700 px-4 py-3 text-white outline-none focus:border-cyan-500"
-                placeholder="tu@correo.com"
-              />
-            </div>
-
-            <div>
-              <label for="mensaje" class="block text-sm text-slate-300 mb-2">Problema o necesidad</label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="5"
-                required
-                class="w-full rounded-xl bg-slate-900 border border-slate-700 px-4 py-3 text-white outline-none focus:border-cyan-500"
-                placeholder="Describe brevemente qué necesitas resolver"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              class="w-full bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition"
-            >
-              Enviar consulta
-            </button>
-
-            <p id="formMessage" class="text-sm text-slate-400"></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-slate-950 text-center py-8 border-t border-slate-800">
+  <section class="py-20 bg-slate-950/10">
     <div class="max-w-6xl mx-auto px-6">
-      <p class="text-slate-300">HadalisTech · Kraken</p>
-      <p class="text-slate-500 text-sm mt-2 mb-4">
-        Consultoría y delivery técnico para integraciones, migraciones y automatización operativa.
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="text-cyan-400 font-semibold mb-3">Por qué HadalisTech</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Una firma técnica clara, confiable y enfocada en resolver lo que ya está frenando la operación.</h2>
+        <p class="text-slate-300 leading-7">
+          No vendemos plataformas infladas ni procesos innecesarios. Entramos cuando hay una integración pendiente, un flujo roto o una operación que ya está pagando el costo de sistemas desconectados.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Claridad en el proceso</h3>
+          <p class="text-sm text-slate-400 leading-6">Aterrizamos el problema, delimitamos el alcance y evitamos vueltas innecesarias.</p>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Foco en operación real</h3>
+          <p class="text-sm text-slate-400 leading-6">No conectamos cosas por deporte técnico. Buscamos reducir errores, retrabajo y fricción operativa.</p>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-semibold mb-2">Ejecución especializada</h3>
+          <p class="text-sm text-slate-400 leading-6">Trabajamos mejor en proyectos puntuales, bien definidos y con necesidad técnica clara.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y border-slate-800 bg-slate-950/30">
+    <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+      <p class="text-cyan-400 font-semibold mb-3">Cómo empezar</p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple y directo.</h2>
+      <p class="text-slate-300 max-w-3xl mx-auto leading-7 mb-12">
+        Nos cuentas el caso, revisamos si es viable y te proponemos una ruta clara para moverlo sin complicarlo de más.
       </p>
-      <div class="flex justify-center gap-6 text-sm">   
+
+      <div class="grid md:grid-cols-3 gap-5 text-left">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">1</div>
+          <h3 class="font-semibold mb-2">Nos escribes</h3>
+          <p class="text-sm text-slate-400 leading-6">Por WhatsApp o formulario, con una breve explicación del caso.</p>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">2</div>
+          <h3 class="font-semibold mb-2">Revisamos viabilidad</h3>
+          <p class="text-sm text-slate-400 leading-6">Confirmamos si el caso se puede mover directo o si requiere revisión técnica previa.</p>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold mb-4">3</div>
+          <h3 class="font-semibold mb-2">Propuesta clara</h3>
+          <p class="text-sm text-slate-400 leading-6">Aterrizamos alcance, siguiente paso y forma de implementación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-slate-950/35">
+    <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Cuéntanos qué necesitas resolver.</h2>
+      <p class="text-slate-300 max-w-2xl mx-auto leading-7 mb-8">
+        Si tienes una integración pendiente, un flujo técnico atorado o una necesidad puntual entre sistemas, revisamos contigo si hace sentido moverlo con HadalisTech.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10">
         <a
-          href="https://www.linkedin.com/company/hadalistech/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-cyan-400 hover:text-cyan-300 transition"
+          href="https://wa.me/5218127691849?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20contarles%20un%20caso%20que%20necesito%20resolver."
+          class="inline-flex items-center justify-center bg-cyan-500 text-slate-950 font-semibold px-6 py-3 rounded-xl hover:bg-cyan-400 transition"
         >
-          LinkedIn
+          Escríbenos por WhatsApp
         </a>
         <a
           href="mailto:hadalistech@gmail.com"
-          class="text-cyan-400 hover:text-cyan-300 transition"
+          class="inline-flex items-center justify-center border border-slate-700 text-white font-semibold px-6 py-3 rounded-xl hover:border-cyan-500 hover:text-cyan-300 transition"
         >
-          Correo
+          Escríbenos por correo
         </a>
+      </div>
+
+      <p class="text-sm text-slate-500">
+        Reemplaza el número de WhatsApp placeholder y publícalo. Ya estuvo bueno de perfeccionismo ornamental.
+      </p>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-800 py-8 bg-slate-950/85">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div>
+        <p class="font-semibold text-white">HadalisTech</p>
+        <p class="text-sm text-slate-500 mt-1">Integraciones y automatización operativa.</p>
+      </div>
+      <div class="flex gap-6 text-sm">
+        <a href="mailto:hadalistech@gmail.com" class="text-cyan-400 hover:text-cyan-300 transition">Correo</a>
+        <a href="https://www.linkedin.com/company/hadalistech/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition">LinkedIn</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    const contactForm = document.getElementById("contactForm");
-    const formMessage = document.getElementById("formMessage");
-
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const nombre = document.getElementById("nombre").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const mensaje = document.getElementById("mensaje").value.trim();
-
-      if (!nombre || !email || !mensaje) {
-        formMessage.textContent = "Completa todos los campos antes de enviar.";
-        formMessage.className = "text-sm text-amber-400";
-        return;
-      }
-
-      const subject = encodeURIComponent("Consulta Kraken - " + nombre);
-      const body = encodeURIComponent(
-        "Nombre: " + nombre + "\n" +
-        "Correo: " + email + "\n\n" +
-        "Problema o necesidad:\n" + mensaje
-      );
-
-      window.location.href = `mailto:hadalistech@gmail.com?subject=${subject}&body=${body}`;
-
-      formMessage.textContent = "Se abrió tu cliente de correo para enviar la consulta.";
-      formMessage.className = "text-sm text-emerald-400";
-      contactForm.reset();
-    });
-  </script>
 </body>
 </html>
