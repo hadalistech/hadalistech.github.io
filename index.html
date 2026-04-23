@@ -13,399 +13,344 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hadalistech.com" />
   <meta name="theme-color" content="#020617" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          boxShadow: {
-            glow: '0 0 0 1px rgba(34,211,238,0.08), 0 20px 60px rgba(8,47,73,0.45)'
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body {
-      background:
-        radial-gradient(circle at top center, rgba(6, 182, 212, 0.12), transparent 28%),
-        radial-gradient(circle at 90% 35%, rgba(14, 165, 233, 0.10), transparent 18%),
-        linear-gradient(180deg, #020617 0%, #0f172a 50%, #020617 100%);
-    }
-    .glass {
-      background: rgba(15, 23, 42, 0.66);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-  </style>
+  <link rel="icon" href="./assets/logo.png" />
+  <link rel="stylesheet" href="./assets/styles.css" />
 </head>
-<body class="min-h-screen bg-slate-950 text-white antialiased selection:bg-cyan-300 selection:text-slate-950">
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 lg:px-8">
-      <div>
-        <a href="#" class="text-2xl font-bold tracking-tight text-cyan-300">HadalisTech</a>
-        <p class="mt-1 text-sm text-slate-400">Backend e integraciones para operaciones críticas</p>
-      </div>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="./index.html" class="brand">
+        <img src="./assets/logo.png" alt="HadalisTech" class="brand__logo" />
+        <div>
+          <div class="brand__name">HadalisTech</div>
+          <div class="brand__tagline">Backend e integraciones para operaciones críticas</div>
+        </div>
+      </a>
 
-      <div class="hidden gap-3 md:flex">
-        <a
-          href="#contacto"
-          class="inline-flex items-center justify-center rounded-2xl border border-slate-700 bg-transparent px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-slate-900"
-        >
-          Solicita una revisión técnica
-        </a>
-        <a
-          href="https://wa.me/5218127691849?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20solicitar%20una%20revisi%C3%B3n%20t%C3%A9cnica."
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center rounded-2xl bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
-        >
-          WhatsApp
-        </a>
+      <div class="nav-actions">
+        <a href="./sap-b1/index.html" class="btn btn--secondary">SAP Business One</a>
+        <a href="#contacto" class="btn btn--primary">Solicita una revisión técnica</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="mx-auto max-w-7xl px-6 pb-20 pt-20 lg:px-8 lg:pb-28 lg:pt-24">
-      <div class="mx-auto max-w-5xl text-center">
-        <div class="mb-6 inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-200">
-          Partner técnico para integraciones, automatización y estabilización backend
-        </div>
-
-        <h1 class="mx-auto max-w-5xl text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl">
-          Conectamos sistemas y destrabamos flujos backend que hoy están costando tiempo, errores y retrabajo.
-        </h1>
-
-        <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
-          Trabajamos en integraciones, automatización de procesos clave y estabilización de sistemas .NET/SQL para que tu operación deje de depender de parches, recaptura manual y conexiones frágiles.
+    <section class="section section--hero hero">
+      <div class="container hero__content">
+        <div class="badge">Partner técnico para integraciones, automatización y estabilización backend</div>
+        <h1>Conectamos sistemas y destrabamos flujos backend que hoy están costando tiempo, errores y retrabajo.</h1>
+        <p class="lead">
+          Trabajamos en integraciones, automatización de procesos clave y estabilización de sistemas .NET/SQL
+          para que tu operación deje de depender de parches, recaptura manual y conexiones frágiles.
         </p>
 
-        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="#contacto"
-            class="inline-flex items-center justify-center rounded-2xl bg-cyan-400 px-7 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-          >
-            Solicita una revisión técnica
-            <span class="ml-2">→</span>
-          </a>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Solicita una revisión técnica</a>
           <a
             href="https://wa.me/5218127691849?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20contarles%20un%20caso%20que%20necesito%20resolver."
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-2xl border border-slate-700 bg-transparent px-7 py-3 font-semibold text-slate-100 transition hover:bg-slate-900"
+            class="btn btn--secondary"
           >
             Escríbenos por WhatsApp
           </a>
         </div>
       </div>
 
-      <div class="mt-14 grid gap-5 md:grid-cols-3">
-        <article class="glass rounded-3xl border border-white/10 p-6 shadow-glow">
-          <div class="mb-4 inline-flex rounded-2xl bg-cyan-400/15 p-3 text-cyan-300">
-            <span class="text-xl">🔌</span>
-          </div>
-          <h3 class="text-xl font-semibold text-white">Integraciones backend</h3>
-          <p class="mt-3 leading-7 text-slate-300">Conectamos sistemas, APIs y servicios que hoy operan por separado.</p>
-        </article>
-
-        <article class="glass rounded-3xl border border-white/10 p-6 shadow-glow">
-          <div class="mb-4 inline-flex rounded-2xl bg-cyan-400/15 p-3 text-cyan-300">
-            <span class="text-xl">⚙️</span>
-          </div>
-          <h3 class="text-xl font-semibold text-white">Automatización operativa</h3>
-          <p class="mt-3 leading-7 text-slate-300">Reducimos pasos manuales en procesos que ya se volvieron costosos.</p>
-        </article>
-
-        <article class="glass rounded-3xl border border-white/10 p-6 shadow-glow">
-          <div class="mb-4 inline-flex rounded-2xl bg-cyan-400/15 p-3 text-cyan-300">
-            <span class="text-xl">🛠️</span>
-          </div>
-          <h3 class="text-xl font-semibold text-white">Estabilización .NET/SQL</h3>
-          <p class="mt-3 leading-7 text-slate-300">Entramos cuando el backend ya existe, pero está frenando la operación.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="border-y border-white/10 bg-slate-900/40">
-      <div class="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
-        <div class="max-w-3xl">
-          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">El problema</p>
-          <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">Cuando los sistemas no se hablan, la operación lo termina pagando.</h2>
-          <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">
-            Muchas empresas ya tienen sistemas, plataformas o procesos digitales. El problema no es que no exista tecnología. El problema es que la operación sigue dependiendo de validaciones manuales, datos duplicados, integraciones pendientes o backends que no están respondiendo como deberían.
-          </p>
-        </div>
-
-        <div class="grid gap-4">
-          <article class="rounded-3xl border border-white/10 bg-slate-950/70 p-6">
-            <h3 class="text-lg font-semibold text-white">Sistemas desconectados</h3>
-            <p class="mt-2 leading-7 text-slate-300">Tu equipo tiene que mover información entre plataformas porque no existe una conexión confiable entre ellas.</p>
+      <div class="container" style="margin-top: 56px;">
+        <div class="grid-auto-3">
+          <article class="card card--glass">
+            <div class="card__body">
+              <div class="card__icon">🔌</div>
+              <h3>Integraciones backend</h3>
+              <p class="copy">Conectamos sistemas, APIs y servicios que hoy operan por separado.</p>
+            </div>
           </article>
-          <article class="rounded-3xl border border-white/10 bg-slate-950/70 p-6">
-            <h3 class="text-lg font-semibold text-white">Procesos manuales repetitivos</h3>
-            <p class="mt-2 leading-7 text-slate-300">La operación depende de copiar, validar o actualizar información en varios puntos.</p>
+
+          <article class="card card--glass">
+            <div class="card__body">
+              <div class="card__icon">⚙️</div>
+              <h3>Automatización operativa</h3>
+              <p class="copy">Reducimos pasos manuales en procesos que ya se volvieron costosos.</p>
+            </div>
           </article>
-          <article class="rounded-3xl border border-white/10 bg-slate-950/70 p-6">
-            <h3 class="text-lg font-semibold text-white">Errores y retrabajo</h3>
-            <p class="mt-2 leading-7 text-slate-300">Se corrigen datos a mano, se repiten tareas o se pierde tiempo validando información en distintos lugares.</p>
-          </article>
-          <article class="rounded-3xl border border-white/10 bg-slate-950/70 p-6">
-            <h3 class="text-lg font-semibold text-white">Backend inestable o limitado</h3>
-            <p class="mt-2 leading-7 text-slate-300">Ya existe una solución, pero presenta fricción, lentitud, fallas de integración o puntos frágiles en producción.</p>
+
+          <article class="card card--glass">
+            <div class="card__body">
+              <div class="card__icon">🛠️</div>
+              <h3>Estabilización .NET/SQL</h3>
+              <p class="copy">Entramos cuando el backend ya existe, pero está frenando la operación.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-      <div class="max-w-3xl">
-        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">Servicios</p>
-        <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">Tres formas claras en las que HadalisTech entra a resolver.</h2>
-        <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">
-          Nada de menús infinitos de servicios. Estos son los frentes donde realmente generamos valor y donde la operación suele estar pagando el costo del desorden técnico.
-        </p>
-      </div>
-
-      <div class="mt-12 grid gap-6 lg:grid-cols-3">
-        <article class="rounded-[28px] border border-white/10 bg-slate-900/60 p-7">
-          <div class="mb-5 inline-flex w-fit rounded-2xl bg-cyan-400/15 p-3 text-cyan-300">
-            <span class="text-xl">🔗</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-white">Integraciones backend y APIs</h3>
-          <p class="mt-4 leading-7 text-slate-300">
-            Conectamos sistemas internos, plataformas externas y servicios de terceros para mover información sin recaptura manual ni dependencias frágiles.
+    <section class="section section--soft">
+      <div class="container two-up">
+        <div class="section__intro">
+          <div class="eyebrow">El problema</div>
+          <h2>Cuando los sistemas no se hablan, la operación lo termina pagando.</h2>
+          <p class="copy" style="margin-top: 18px;">
+            Muchas empresas ya tienen sistemas, plataformas o procesos digitales.
+            El problema no es que no exista tecnología. El problema es que la operación sigue dependiendo
+            de validaciones manuales, datos duplicados, integraciones pendientes o backends que no están respondiendo como deberían.
           </p>
-          <div class="mt-6 border-t border-white/10 pt-6">
-            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Incluye típicamente</p>
-            <ul class="space-y-3 text-sm leading-6 text-slate-300">
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Consumo y exposición de APIs</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Integración entre ERP, CRM, portales o sistemas internos</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Sincronización de información clave</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Validaciones y manejo de errores</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Conexiones entre plataformas con lógica de negocio</span></li>
-            </ul>
-          </div>
-        </article>
+        </div>
 
-        <article class="rounded-[28px] border border-white/10 bg-slate-900/60 p-7">
-          <div class="mb-5 inline-flex w-fit rounded-2xl bg-cyan-400/15 p-3 text-cyan-300">
-            <span class="text-xl">🧩</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-white">Automatización de flujos operativos</h3>
-          <p class="mt-4 leading-7 text-slate-300">
-            Convertimos procesos repetitivos y manuales en flujos backend controlados, medibles y menos propensos a error.
-          </p>
-          <div class="mt-6 border-t border-white/10 pt-6">
-            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Incluye típicamente</p>
-            <ul class="space-y-3 text-sm leading-6 text-slate-300">
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Automatización entre sistemas</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Disparadores de procesos</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Validación y actualización automática de datos</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Ejecución de tareas repetitivas sin intervención manual</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Reducción de pasos críticos en operación</span></li>
-            </ul>
-          </div>
-        </article>
+        <div class="grid-auto-3" style="grid-template-columns: 1fr;">
+          <article class="card card--soft">
+            <div class="card__body">
+              <h3>Sistemas desconectados</h3>
+              <p class="copy">Tu equipo tiene que mover información entre plataformas porque no existe una conexión confiable entre ellas.</p>
+            </div>
+          </article>
 
-        <article class="rounded-[28px] border border-white/10 bg-slate-900/60 p-7">
-          <div class="mb-5 inline-flex w-fit rounded-2xl bg-cyan-400/15 p-3 text-cyan-300">
-            <span class="text-xl">🧠</span>
-          </div>
-          <h3 class="text-2xl font-semibold text-white">Rescate y estabilización de sistemas .NET/SQL</h3>
-          <p class="mt-4 leading-7 text-slate-300">
-            Entramos cuando el backend ya existe, pero está afectando la operación por fallas, lentitud, mala integración o deuda técnica visible.
-          </p>
-          <div class="mt-6 border-t border-white/10 pt-6">
-            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Incluye típicamente</p>
-            <ul class="space-y-3 text-sm leading-6 text-slate-300">
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Revisión de endpoints y servicios</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Corrección de cuellos de botella</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Soporte sobre integraciones existentes</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Revisión de puntos frágiles en .NET y SQL</span></li>
-              <li class="flex gap-3"><span class="text-cyan-300">✓</span><span>Ajustes técnicos para estabilizar operación crítica</span></li>
-            </ul>
-          </div>
-        </article>
+          <article class="card card--soft">
+            <div class="card__body">
+              <h3>Procesos manuales repetitivos</h3>
+              <p class="copy">La operación depende de copiar, validar o actualizar información en varios puntos.</p>
+            </div>
+          </article>
+
+          <article class="card card--soft">
+            <div class="card__body">
+              <h3>Errores y retrabajo</h3>
+              <p class="copy">Se corrigen datos a mano, se repiten tareas o se pierde tiempo validando información en distintos lugares.</p>
+            </div>
+          </article>
+
+          <article class="card card--soft">
+            <div class="card__body">
+              <h3>Backend inestable o limitado</h3>
+              <p class="copy">Ya existe una solución, pero presenta fricción, lentitud, fallas de integración o puntos frágiles en producción.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="border-y border-white/10 bg-slate-900/30">
-      <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div class="max-w-3xl">
-          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">Fit</p>
-          <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">Trabajamos mejor en casos concretos, con dolor operativo real y necesidad técnica clara.</h2>
-          <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">
+    <section class="section">
+      <div class="container">
+        <div class="section__intro">
+          <div class="eyebrow">Servicios</div>
+          <h2>Tres formas claras en las que HadalisTech entra a resolver.</h2>
+          <p class="copy" style="margin-top: 18px;">
+            Nada de menús infinitos de servicios. Estos son los frentes donde realmente generamos valor
+            y donde la operación suele estar pagando el costo del desorden técnico.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card__body card__body--lg">
+              <div class="card__icon">🔗</div>
+              <h3>Integraciones backend y APIs</h3>
+              <p class="copy">
+                Conectamos sistemas internos, plataformas externas y servicios de terceros para mover información
+                sin recaptura manual ni dependencias frágiles.
+              </p>
+
+              <div class="divider-top">
+                <div class="kicker">Incluye típicamente</div>
+                <ul class="list" style="margin-top: 14px;">
+                  <li><span class="list__mark">✓</span><span>Consumo y exposición de APIs</span></li>
+                  <li><span class="list__mark">✓</span><span>Integración entre ERP, CRM, portales o sistemas internos</span></li>
+                  <li><span class="list__mark">✓</span><span>Sincronización de información clave</span></li>
+                  <li><span class="list__mark">✓</span><span>Validaciones y manejo de errores</span></li>
+                  <li><span class="list__mark">✓</span><span>Conexiones entre plataformas con lógica de negocio</span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body card__body--lg">
+              <div class="card__icon">🧩</div>
+              <h3>Automatización de flujos operativos</h3>
+              <p class="copy">
+                Convertimos procesos repetitivos y manuales en flujos backend controlados, medibles y menos propensos a error.
+              </p>
+
+              <div class="divider-top">
+                <div class="kicker">Incluye típicamente</div>
+                <ul class="list" style="margin-top: 14px;">
+                  <li><span class="list__mark">✓</span><span>Automatización entre sistemas</span></li>
+                  <li><span class="list__mark">✓</span><span>Disparadores de procesos</span></li>
+                  <li><span class="list__mark">✓</span><span>Validación y actualización automática de datos</span></li>
+                  <li><span class="list__mark">✓</span><span>Ejecución de tareas repetitivas sin intervención manual</span></li>
+                  <li><span class="list__mark">✓</span><span>Reducción de pasos críticos en operación</span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__body card__body--lg">
+              <div class="card__icon">🧠</div>
+              <h3>Rescate y estabilización de sistemas .NET/SQL</h3>
+              <p class="copy">
+                Entramos cuando el backend ya existe, pero está afectando la operación por fallas, lentitud, mala integración o deuda técnica visible.
+              </p>
+
+              <div class="divider-top">
+                <div class="kicker">Incluye típicamente</div>
+                <ul class="list" style="margin-top: 14px;">
+                  <li><span class="list__mark">✓</span><span>Revisión de endpoints y servicios</span></li>
+                  <li><span class="list__mark">✓</span><span>Corrección de cuellos de botella</span></li>
+                  <li><span class="list__mark">✓</span><span>Soporte sobre integraciones existentes</span></li>
+                  <li><span class="list__mark">✓</span><span>Revisión de puntos frágiles en .NET y SQL</span></li>
+                  <li><span class="list__mark">✓</span><span>Ajustes técnicos para estabilizar operación crítica</span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--panel" id="sap-b1">
+      <div class="container two-up">
+        <div>
+          <div class="eyebrow">SAP Business One</div>
+          <h2>También resolvemos casos SAP Business One cuando la operación ya lo está pagando.</h2>
+          <p class="copy" style="margin-top: 18px;">
+            Si tu empresa o tu cliente opera con SAP Business One y hoy tiene integraciones pendientes,
+            reportes lentos, procesos manuales entre sistemas o un add-on que dejó de funcionar,
+            podemos entrar a resolver ese tramo técnico.
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">.NET + SQL Server</span>
+            <span class="tag">DI API / Service Layer</span>
+            <span class="tag">White-label para consultoras</span>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div class="callout__body">
+            <h3>Qué podemos mover alrededor de SAP Business One</h3>
+            <div class="grid-auto-3" style="grid-template-columns: 1fr; margin-top: 22px;">
+              <article class="card card--soft">
+                <div class="card__body">
+                  <h4>Conectores SAP B1</h4>
+                  <p class="copy">SAP B1 ↔ Shopify, HubSpot, WMS o sistemas internos.</p>
+                </div>
+              </article>
+
+              <article class="card card--soft">
+                <div class="card__body">
+                  <h4>Reportes y consultas custom</h4>
+                  <p class="copy">Cuando el reporte estándar tarda demasiado y todo acaba en Excel.</p>
+                </div>
+              </article>
+
+              <article class="card card--soft">
+                <div class="card__body">
+                  <h4>Rescate y estabilización</h4>
+                  <p class="copy">Cuando una integración, add-on o proceso dejó de responder como debería.</p>
+                </div>
+              </article>
+            </div>
+
+            <div style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px;">
+              <a href="./sap-b1/index.html" class="btn btn--primary">Ver soluciones para SAP Business One</a>
+              <a
+                href="https://wa.me/5218127691849?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20revisar%20un%20caso%20relacionado%20con%20SAP%20Business%20One."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--secondary"
+              >
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__intro">
+          <div class="eyebrow">Fit</div>
+          <h2>Trabajamos mejor en casos concretos, con dolor operativo real y necesidad técnica clara.</h2>
+          <p class="copy" style="margin-top: 18px;">
             Filtrar bien también es vender mejor. Si todo entra, nada se entiende y el pipeline se llena de ruido.
           </p>
         </div>
 
-        <div class="mt-12 grid gap-6 lg:grid-cols-2">
-          <article class="rounded-3xl border border-emerald-400/20 bg-emerald-400/5 p-7">
-            <div class="mb-4 flex items-center gap-3 text-emerald-300">
-              <span>✅</span>
-              <h3 class="text-xl font-semibold">Sí hacemos fit cuando</h3>
+        <div class="grid-2">
+          <article class="card card--soft">
+            <div class="card__body card__body--lg">
+              <div class="kicker">Sí hacemos fit cuando</div>
+              <ul class="list" style="margin-top: 18px;">
+                <li><span class="list__mark">✓</span><span>Ya existe una operación real y el problema técnico está afectando tiempos, calidad o visibilidad</span></li>
+                <li><span class="list__mark">✓</span><span>Hay dos sistemas que deben conectarse</span></li>
+                <li><span class="list__mark">✓</span><span>Existe un flujo manual que ya se volvió costoso</span></li>
+                <li><span class="list__mark">✓</span><span>Hay un backend .NET/SQL que necesita estabilización o ajuste</span></li>
+                <li><span class="list__mark">✓</span><span>La empresa necesita resolver un tramo técnico puntual sin inflar el proyecto</span></li>
+              </ul>
             </div>
-            <ul class="space-y-4 text-slate-300">
-              <li class="flex gap-3 leading-7"><span class="text-emerald-300">✓</span><span>Ya existe una operación real y el problema técnico está afectando tiempos, calidad o visibilidad.</span></li>
-              <li class="flex gap-3 leading-7"><span class="text-emerald-300">✓</span><span>Hay dos sistemas que deben conectarse.</span></li>
-              <li class="flex gap-3 leading-7"><span class="text-emerald-300">✓</span><span>Existe un flujo manual que ya se volvió costoso.</span></li>
-              <li class="flex gap-3 leading-7"><span class="text-emerald-300">✓</span><span>Hay un backend .NET/SQL que necesita estabilización o ajuste.</span></li>
-              <li class="flex gap-3 leading-7"><span class="text-emerald-300">✓</span><span>La empresa necesita resolver un tramo técnico puntual sin inflar el proyecto.</span></li>
-            </ul>
           </article>
 
-          <article class="rounded-3xl border border-rose-400/20 bg-rose-400/5 p-7">
-            <div class="mb-4 flex items-center gap-3 text-rose-300">
-              <span>⛔</span>
-              <h3 class="text-xl font-semibold">No somos la mejor opción cuando</h3>
+          <article class="card card--soft">
+            <div class="card__body card__body--lg">
+              <div class="kicker">No somos la mejor opción cuando</div>
+              <ul class="list" style="margin-top: 18px;">
+                <li><span class="list__mark">×</span><span>Se busca una app completa desde cero sin definición clara</span></li>
+                <li><span class="list__mark">×</span><span>Lo que se necesita es staffing encubierto</span></li>
+                <li><span class="list__mark">×</span><span>Aún no existe un proceso real que resolver</span></li>
+                <li><span class="list__mark">×</span><span>Se espera una solución genérica sin análisis del caso</span></li>
+                <li><span class="list__mark">×</span><span>El problema principal es marketing, branding o adquisición de clientes</span></li>
+              </ul>
             </div>
-            <ul class="space-y-4 text-slate-300">
-              <li class="flex gap-3 leading-7"><span class="text-rose-300">•</span><span>Se busca una app completa desde cero sin definición clara.</span></li>
-              <li class="flex gap-3 leading-7"><span class="text-rose-300">•</span><span>Lo que se necesita es staffing encubierto.</span></li>
-              <li class="flex gap-3 leading-7"><span class="text-rose-300">•</span><span>Aún no existe un proceso real que resolver.</span></li>
-              <li class="flex gap-3 leading-7"><span class="text-rose-300">•</span><span>Se espera una solución genérica sin análisis del caso.</span></li>
-              <li class="flex gap-3 leading-7"><span class="text-rose-300">•</span><span>El problema principal es marketing, branding o adquisición de clientes.</span></li>
-            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-      <div class="max-w-3xl">
-        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">Casos de uso</p>
-        <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">Ejemplos del tipo de problemas que ayudamos a mover.</h2>
-        <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">
-          No vendemos una plataforma infinita. Entramos a resolver el tramo técnico que ya está frenando la operación.
-        </p>
-      </div>
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="callout">
+          <div class="callout__body" style="text-align: center;">
+            <div class="kicker">Revisión técnica</div>
+            <h2 style="margin-top: 18px;">¿Tienes una integración pendiente o un backend que está frenando la operación?</h2>
+            <p class="lead" style="max-width: 760px; margin: 20px auto 0;">
+              Revisamos tu caso, validamos viabilidad y te proponemos una ruta clara para moverlo con HadalisTech.
+            </p>
 
-      <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        <article class="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
-          <h3 class="text-xl font-semibold text-cyan-300">Sincronización entre ERP y CRM</h3>
-          <p class="mt-4 leading-7 text-slate-300">Cuando ventas y operación trabajan con información distinta, conectamos ambos sistemas para evitar recaptura, errores y seguimiento roto.</p>
-        </article>
+            <div class="hero__actions" style="margin-top: 32px;">
+              <a
+                href="https://wa.me/5218127691849?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20solicitar%20una%20revisi%C3%B3n%20t%C3%A9cnica."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary"
+              >
+                Solicita una revisión técnica
+              </a>
 
-        <article class="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
-          <h3 class="text-xl font-semibold text-cyan-300">Integración de API con sistema interno</h3>
-          <p class="mt-4 leading-7 text-slate-300">Cuando una plataforma externa debe alimentar o consumir datos del sistema central, resolvemos la conexión, validación y flujo backend.</p>
-        </article>
-
-        <article class="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
-          <h3 class="text-xl font-semibold text-cyan-300">Automatización de proceso crítico</h3>
-          <p class="mt-4 leading-7 text-slate-300">Cuando un flujo depende de copiar, revisar o mover datos manualmente, lo convertimos en un proceso backend controlado.</p>
-        </article>
-
-        <article class="rounded-3xl border border-white/10 bg-slate-900/60 p-6">
-          <h3 class="text-xl font-semibold text-cyan-300">Estabilización de backend operativo</h3>
-          <p class="mt-4 leading-7 text-slate-300">Cuando el sistema ya existe pero falla en puntos clave, corregimos el tramo técnico para devolver estabilidad a la operación.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="border-y border-white/10 bg-slate-900/40">
-      <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div class="max-w-3xl">
-          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">Por qué HadalisTech</p>
-          <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">Una firma técnica enfocada en resolver problemas reales, no en inflar proyectos.</h2>
-          <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">
-            El objetivo no es sonar sofisticados. El objetivo es mover el caso correcto con claridad, foco y ejecución especializada.
-          </p>
-        </div>
-
-        <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <article class="rounded-3xl border border-white/10 bg-slate-950/70 p-7">
-            <div class="mb-4 inline-flex rounded-2xl bg-cyan-400/15 p-3 text-cyan-300"><span class="text-xl">🎯</span></div>
-            <h3 class="text-xl font-semibold text-white">Especialidad clara</h3>
-            <p class="mt-3 leading-7 text-slate-300">Trabajamos con foco en backend, integraciones y operación crítica.</p>
-          </article>
-
-          <article class="rounded-3xl border border-white/10 bg-slate-950/70 p-7">
-            <div class="mb-4 inline-flex rounded-2xl bg-cyan-400/15 p-3 text-cyan-300"><span class="text-xl">📌</span></div>
-            <h3 class="text-xl font-semibold text-white">Visión práctica</h3>
-            <p class="mt-3 leading-7 text-slate-300">No proponemos complejidad innecesaria. Aterrizamos el problema y resolvemos el tramo que realmente está frenando la operación.</p>
-          </article>
-
-          <article class="rounded-3xl border border-white/10 bg-slate-950/70 p-7">
-            <div class="mb-4 inline-flex rounded-2xl bg-cyan-400/15 p-3 text-cyan-300"><span class="text-xl">🗄️</span></div>
-            <h3 class="text-xl font-semibold text-white">Base técnica sólida</h3>
-            <p class="mt-3 leading-7 text-slate-300">Afinidad natural con entornos .NET, SQL, APIs e integraciones entre sistemas.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-      <div class="max-w-3xl">
-        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">Cómo empezar</p>
-        <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">Simple, directo y sin venderte un proyecto inflado desde la primera llamada.</h2>
-        <p class="mt-4 text-base leading-7 text-slate-300 md:text-lg">
-          Nos cuentas el caso, revisamos si hace sentido y te proponemos una ruta clara para moverlo.
-        </p>
-      </div>
-
-      <div class="mt-12 grid gap-6 md:grid-cols-3">
-        <article class="rounded-3xl border border-white/10 bg-slate-900/60 p-7">
-          <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-cyan-400/15 text-lg font-bold text-cyan-300">1</div>
-          <h3 class="text-xl font-semibold text-white">Nos cuentas el caso</h3>
-          <p class="mt-3 leading-7 text-slate-300">Por WhatsApp o formulario, con una breve explicación del problema, flujo o integración que necesitas resolver.</p>
-        </article>
-
-        <article class="rounded-3xl border border-white/10 bg-slate-900/60 p-7">
-          <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-cyan-400/15 text-lg font-bold text-cyan-300">2</div>
-          <h3 class="text-xl font-semibold text-white">Revisamos viabilidad técnica</h3>
-          <p class="mt-3 leading-7 text-slate-300">Confirmamos si el caso hace sentido, si requiere una revisión técnica más profunda o si no somos la mejor opción.</p>
-        </article>
-
-        <article class="rounded-3xl border border-white/10 bg-slate-900/60 p-7">
-          <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-cyan-400/15 text-lg font-bold text-cyan-300">3</div>
-          <h3 class="text-xl font-semibold text-white">Te proponemos una ruta clara</h3>
-          <p class="mt-3 leading-7 text-slate-300">Aterrizamos alcance, siguiente paso y forma de implementación para mover el caso con claridad.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contacto" class="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
-      <div class="rounded-[32px] border border-cyan-400/20 bg-gradient-to-br from-cyan-400/10 via-slate-900 to-slate-950 p-8 shadow-glow md:p-12">
-        <div class="mx-auto max-w-4xl text-center">
-          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">Revisión técnica</p>
-          <h2 class="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">¿Tienes una integración pendiente o un backend que está frenando la operación?</h2>
-          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-            Revisamos tu caso, validamos viabilidad y te proponemos una ruta clara para moverlo con HadalisTech.
-          </p>
-          <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="https://wa.me/5218127691849?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20solicitar%20una%20revisi%C3%B3n%20t%C3%A9cnica."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center justify-center rounded-2xl bg-cyan-400 px-7 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-            >
-              Solicita una revisión técnica
-            </a>
-            <a
-              href="mailto:marcogarzap@hadalistech.com"
-              class="inline-flex items-center justify-center rounded-2xl border border-slate-700 bg-transparent px-7 py-3 font-semibold text-slate-100 transition hover:bg-slate-900"
-            >
-              Escríbenos por correo
-            </a>
+              <a href="mailto:marcogarzap@hadalistech.com" class="btn btn--secondary">
+                Escríbenos por correo
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-white/10 bg-slate-950/90">
-    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-8 text-center md:flex-row md:items-center md:justify-between md:text-left lg:px-8">
+  <footer class="footer">
+    <div class="container footer__inner">
       <div>
-        <p class="text-lg font-semibold text-white">HadalisTech</p>
-        <p class="mt-1 text-sm text-slate-400">Backend e integraciones para operaciones críticas</p>
+        <div class="brand__name" style="font-size: 1.2rem;">HadalisTech</div>
+        <div class="brand__tagline">Backend e integraciones para operaciones críticas</div>
       </div>
-      <div class="flex flex-wrap items-center justify-center gap-5 text-sm text-slate-300 md:justify-end">
-        <a href="mailto:marcogarzap@hadalistech.com" class="transition hover:text-cyan-300">Correo</a>
-        <a href="https://www.linkedin.com/company/hadalistech/" target="_blank" rel="noopener noreferrer" class="transition hover:text-cyan-300">LinkedIn</a>
-        <a href="https://wa.me/5218127691849" target="_blank" rel="noopener noreferrer" class="transition hover:text-cyan-300">WhatsApp</a>
+
+      <div class="footer__links">
+        <a href="mailto:marcogarzap@hadalistech.com">marcogarzap@hadalistech.com</a>
+        <a href="https://hadalistech.com" target="_blank" rel="noopener noreferrer">hadalistech.com</a>
+        <a href="https://wa.me/5218127691849" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://www.linkedin.com/company/hadalistech/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
